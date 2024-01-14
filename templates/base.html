@@ -19,6 +19,13 @@
 <body>
     <!-- For reusable elements (header, footer, etc) -->
     {% include 'includes/header.html' %}
-    <h1>Hello hey hey</h1>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    {% include 'includes/footer.html' %}
+    
 </body>
 </html>
