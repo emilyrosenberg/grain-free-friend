@@ -56,6 +56,21 @@ img.logo {
     width: 18.75rem;
 }
 
+.active {
+    border-bottom: 2px solid var(--off-black);
+    font-weight: 500;
+}
+
+/* Form */
+
+/* Initial styles based on the tutorial */
+.form {
+    width: 100%;
+    margin: 3% auto;
+    box-shadow: var(--small-box-shadow);
+    border-radius: 5px;
+}
+
 /* Footer */
 
 footer {
