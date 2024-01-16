@@ -1,4 +1,10 @@
-from django.views.generic import CreateView, ListView, DetailView
+from django.views.generic import (
+    CreateView, ListView, DetailView, DeleteView, UpdateView
+)
+
+from django.contrib.auth.mixins import (
+    UserPassesTestMixin, LoginRequiredMixin
+)
 
 # This mixin makes sure that only logged in users can create a recipe
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -38,3 +44,24 @@ class AddRecipe(LoginRequiredMixin, CreateView):
         # Update form's instance of the user and set it to the person who is creating the recipe (the logged in user)
         form.instance.user = self.request.user
         return super(AddRecipe, self).form_valid(form)
+
+
+class EditRecipe(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """ Edit a recipe """
+    template_name = 'recipes/edit_recipe.html'
+    model = Recipe
+    form_class = RecipeForm
+    success_url = '/recipes/'
+
+    def test_func(self):
+        return self.request.user == self.get_object().user
+
+
+# These mixins make sure only the logged in user can delete their recipes
+class DeleteRecipe(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """ Delete a recipe """
+    model = Recipe
+    success_url = '/recipes/'
+
+    def test_func(self):
+        return self.request.user == self.get_object().user
