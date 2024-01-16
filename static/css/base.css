@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
 
 :root {
     /* Fonts */
     --title: 'Montserrat', sans-serif;
-    --main-font: 'Roboto', sans-serif;
+    --main-font: 'Raleway', sans-serif;
 
     /* Colors */
     --blue: #b4e1e6;
@@ -52,9 +52,8 @@ a.nav-link {
     color: var(--off-black);
 }
 
-/* Change this to be the right size */
 img.logo {
-    width: 18.75rem;
+    width: 12rem;
 }
 
 .active {
