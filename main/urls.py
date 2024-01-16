@@ -19,6 +19,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
+    path('djrichtextfield/', include('djrichtextfield.urls')),
     # finds the urls file within the home app
     path('',include('home.urls')),
     path('recipes/', include('recipes.urls'))
