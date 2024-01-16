@@ -21,4 +21,5 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     # finds the urls file within the home app
     path('',include('home.urls')),
+    path('recipes/', include('recipes.urls'))
 ]
