@@ -23,6 +23,7 @@ CUISINE_TYPES = (
     ("oceanic", "Oceanic"),
 )
 
+
 class Recipe(models.Model):
     """
     A model to create and manage recipes
@@ -46,8 +47,7 @@ class Recipe(models.Model):
     )
     image_alt = models.CharField(max_length=100, null=False, blank=False)
     # dropdown menus
-    meal_type = models.CharField(
-        max_length=50, choices=MEAL_TYPES, default="breakfast")
+    meal_type = models.CharField(max_length=50, choices=MEAL_TYPES, default="breakfast")
     cuisine_types = models.CharField(
         max_length=50, choices=CUISINE_TYPES, default="african"
     )
