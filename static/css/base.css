@@ -52,6 +52,7 @@ a.nav-link {
     color: var(--off-black);
 }
 
+/* Change this to be the right size */
 img.logo {
     width: 18.75rem;
 }
@@ -69,6 +70,22 @@ img.logo {
     margin: 3% auto;
     box-shadow: var(--small-box-shadow);
     border-radius: 5px;
+}
+
+/* Recipes */
+
+.card {
+    height: 90%;
+    margin-top: 1rem;
+}
+
+.recipes {
+    text-decoration: none;
+    color: var(--off-black);
+}
+
+.recipes:hover {
+    cursor: pointer;
 }
 
 /* Footer */
