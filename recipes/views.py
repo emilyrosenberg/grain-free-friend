@@ -6,6 +6,8 @@ from django.contrib.auth.mixins import (
     UserPassesTestMixin, LoginRequiredMixin
 )
 
+from django.db.models import Q
+
 # This mixin makes sure that only logged in users can create a recipe
 from django.contrib.auth.mixins import LoginRequiredMixin
 
@@ -20,6 +22,19 @@ class Recipes(ListView):
     model = Recipe
     # Accesses properties of objects in the backend
     context_object_name = "recipes"
+
+    # Searches for keywords within the recipes
+    def get_queryset(self, **kwargs):
+        query = self.request.GET.get('q')
+        if query:
+            recipes = self.model.objects.filter(
+                Q(title__icontains=query) |
+                Q(description__icontains=query) |
+                Q(instructions__icontains=query)
+            )
+        else:
+            recipes = self.model.objects.all()
+        return recipes
 
 
 class RecipeDetail(DetailView):

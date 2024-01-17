@@ -37,9 +37,9 @@
               {% endif %}
             </ul>
             <!-- Form for search bar -->
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary" type="submit">Search</button>
+            <form class="d-flex" role="search" method="GET" action="{% url 'recipes' %}">
+                <input class="form-control me-2" name="q" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Search</button>
               </form>
           </div>
         </div>
