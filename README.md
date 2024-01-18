@@ -28,6 +28,10 @@ It has full CRUD functionality; a user can
 
 ## UX
 ### User Personas
+- A home cook who enjoys experimenting and wants to learn more about grain-free baking.
+- A person with overlapping dietary restrictions (low-carb + kosher, vegan + celiac, etc).
+- A person with new grain-free dietary restrictions who wants to find tasty substitute recipes efficiently.
+
 ### User Stories
 ### Structure
 #### Landing Page
@@ -62,13 +66,19 @@ The main font is [Raleway](https://fonts.google.com/specimen/Raleway). This is a
 ![Raleway font](static/images/readme-images/font-raleway.png)
 #### Logo
 The logo represents 
-<!-- Add content -->
+<!-- Add content about logo and how it was made -->
 It was created using the [wix.com logo maker](https://www.wix.com/logo/maker). <br>
 ![Logo]()
 #### Favicon
 The favicon was created from the logo image using the [favico.io favicon converter](https://favicon.io/favicon-converter/). <br>
 ![Favicon](static/images/readme-images/favicon-image.png)
 #### Images
+The images are from
+<!-- Add content about images -->
+<br>
+
+They are stored in and accessed through [Cloudinary](https://cloudinary.com).
+
 #### Background
 
 ## Testing
