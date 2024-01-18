@@ -91,6 +91,12 @@ They are stored in and accessed through [Cloudinary](https://cloudinary.com).
 ### User Stories Testing
 ### Manual Testing
 ### Bugs
+- Missing imports <br>
+The installed libraries would not run. The error message was: <i>Import "django_resized" could not be resolved.</i> The solution really was [to turn it off and on](https://stackoverflow.com/questions/65933570/import-boto3-could-not-be-resolved-python-vs-code). I restarted VS Code, and this fixed the bug.
+- Add input field for levels <br>
+The first time I tried to add an input field, the site would not run. I realized I needed to make migrations, which fixed the bug. I ran: <br>
+`python3 manage.py makemigrations` <br>
+`python3 manage.py migrate`
 
 ## Future Implementations
 
