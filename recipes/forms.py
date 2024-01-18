@@ -15,8 +15,6 @@ class RecipeForm(forms.ModelForm):
             "instructions",
             "image",
             "image_alt",
-            "meal_type",
-            "cuisine_types",
             "level",
             "method",
         ]
@@ -36,8 +34,6 @@ class RecipeForm(forms.ModelForm):
             "instructions": "Instructions",
             "image": "Image",
             "image_alt": "Image description",
-            "meal_type": "Meal Type",
-            "cuisine_types": "Cuisine Type",
             "level": "Level",
             "method": "Method",
         }

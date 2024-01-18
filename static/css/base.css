@@ -41,6 +41,15 @@ main {
     background-color: var(--cream);
 }
 
+.btn {
+    /* Change border color so it shows up */
+    border: var(--border);
+}
+
+.horiz-line {
+    /* Change color */
+    color: var(--off-black);
+}
 /* Header */
 
 .navbar {
@@ -111,6 +120,7 @@ img.logo {
 .recipe-pic {
     width: 100%;
     height: auto;
+    box-shadow: var(--small-box-shadow);
 }
 
 .recipe-cont {

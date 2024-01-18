@@ -8,20 +8,20 @@
             <div class="recipe-img">
                 <img src="{{ recipe.image.url }}" alt="{{ recipe.image_alt }}" class="recipe-pic">
             </div>
-            <div class="recipe-detail">
-                <h1 class="text-center">{{ recipe.title }}</h1>
-                <p class="text-center">Posted by {{recipe.user}} on {{recipe.posted_date}}</p>
-                <hr>
+            <div class="text-center recipe-detail mt-3">
+                <h1>{{ recipe.title }}</h1>
+                <p>Posted by {{recipe.user}} on {{recipe.posted_date}}</p>
+                <hr class="horiz-line">
                 <p>{{recipe.description}}</p>
-                <p class="p-3"><strong>Cuisine: </strong> {{ recipe.cuisine_types|title }}</p>
-                <p class="p-3"><strong>Level: </strong> {{ recipe.level|title }}</p>
-                <p class="p-3"><strong>Method: </strong> {{ recipe.method|title }}</p>
+                <p><strong>Level: </strong> {{ recipe.level|title }}</p>
+                <p><strong>Method: </strong> {{ recipe.method|title }}</p>
 
                 {% if request.user == recipe.user %} 
-                <div class="text-center">
+                <div class="text-center p-3">
                     <a href="{% url 'edit_recipe' recipe.id %}" class="btn btn-dark w-25">Edit</a>
                     <a href="{% url 'delete_recipe' recipe.id %}" class="btn btn-dark w-25">Delete</a>
                 </div>
+                <hr class="horiz-line">
                 {% endif %}
             </div>
         </div>
