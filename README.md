@@ -3,7 +3,8 @@ Your baking buddy for alternative breads and more
 
 ![Mockup on different devices, created with Techsini.]()
 
-Grain Free Friend is a recipe sharing web app that allows users etc etc....
+Grain Free Friend is a recipe sharing web app that allows users to ...
+<!-- Add content here -->
 It has full CRUD functionality; a user can
 - Create a new recipe
 - Read posted recipes
@@ -48,9 +49,25 @@ It has full CRUD functionality; a user can
 
 ### Surface
 #### Colors
+The color palette is from [Lilybug Design](https://www.lilybugdesign.co.nz/colour-wall). I saw one of these designs used in a [PP4 project by Roshna Vakkee](https://github.com/RoshnaVakkeel/Little_Learners_Lab_Logs?tab=readme-ov-file), and found a beautiful one for my project. This palette is fresh and lively, as well as warm. It supports the Grain Free Friend branding: accessible, fun, supportive.
+![Color palette](https://www.lilybugdesign.co.nz/colour-wall)
+I used colorpicker to get the HEX tags for each color.
+Colors were picked with [imagecolorpicker.com](https://imagecolorpicker.com/en).
+
 #### Fonts
+The fonts used in this project are from [Google Fonts](https://fonts.google.com/). <br>
+The title font is [Montserrat](https://fonts.google.com/specimen/Montserrat). This is a bold, modern font with a rounded shape that's friendly and accessible. It was an option in the logo maker, and I decided to use it for the titles as well. <br>
+![Montserrat font](static/images/readme-images/font-montserrat.png)
+The main font is [Raleway](https://fonts.google.com/specimen/Raleway). This is a friendly, readable font in a modern style. It makes the recipe ingredients and instructions very clear and accessible. <br>
+![Raleway font](static/images/readme-images/font-raleway.png)
 #### Logo
+The logo represents 
+<!-- Add content -->
+It was created using the [wix.com logo maker](https://www.wix.com/logo/maker). <br>
+![Logo]()
 #### Favicon
+The favicon was created from the logo image using the [favico.io favicon converter](https://favicon.io/favicon-converter/). <br>
+![Favicon](static/images/readme-images/favicon-image.png)
 #### Images
 #### Background
 
@@ -80,6 +97,8 @@ It has full CRUD functionality; a user can
 ### Content
 ### Media
 ### Thank you
+- This project was developed using the [Django Recipe Sharing tutorial by Dee Mc](https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=1). I am indebted to her for the basic styling of the header, footer, and forms, the CRUD functionality of the recipes, class-based views, and querying.
+- Inspiration for this readme came from [gStarhigh](https://github.com/gStarhigh/pro4).
 
 <!-- ## Features
 
