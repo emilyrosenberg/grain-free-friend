@@ -14,6 +14,7 @@
                 <hr>
                 <p>{{recipe.description}}</p>
                 <p class="p-3"><strong>Cuisine: </strong> {{ recipe.cuisine_types|title }}</p>
+                <p class="p-3"><strong>Level: </strong> {{ recipe.level|title }}</p>
 
                 {% if request.user == recipe.user %} 
                 <div class="text-center">

@@ -23,6 +23,8 @@ CUISINE_TYPES = (
     ("oceanic", "Oceanic"),
 )
 
+LEVEL = (("easy", "Easy"), ("moderate", "Moderate"), ("fancy", "Fancy"))
+
 
 class Recipe(models.Model):
     """
@@ -49,7 +51,9 @@ class Recipe(models.Model):
     # dropdown menus
     meal_type = models.CharField(max_length=50, choices=MEAL_TYPES, default="breakfast")
     cuisine_types = models.CharField(
-        max_length=50, choices=CUISINE_TYPES, default="african"
+        max_length=50, choices=CUISINE_TYPES, default="african")
+    level = models.CharField(
+        max_length=50, choices=LEVEL, default="easy"
     )
 
     posted_date = models.DateTimeField(auto_now=True)
