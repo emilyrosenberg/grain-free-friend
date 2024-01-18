@@ -51,8 +51,7 @@ class Recipe(models.Model):
     cuisine_types = models.CharField(
         max_length=50, choices=CUISINE_TYPES, default="african"
     )
-    # Remove this calories thing later
-    calories = models.IntegerField()
+
     posted_date = models.DateTimeField(auto_now=True)
 
     class Meta:

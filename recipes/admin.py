@@ -8,7 +8,6 @@ class RecipeAdmin(admin.ModelAdmin):
     list_display = (
         "title",
         "meal_type",
-        "calories",
         "instructions",
         "ingredients",
         "image",

@@ -17,7 +17,6 @@ class RecipeForm(forms.ModelForm):
             "image_alt",
             "meal_type",
             "cuisine_types",
-            "calories",
         ]
 
         ingredients = forms.CharField(widget=RichTextWidget())
@@ -37,5 +36,4 @@ class RecipeForm(forms.ModelForm):
             "image_alt": "Describe Image",
             "meal_type": "Meal Type",
             "cuisine_types": "Cuisine Type",
-            "calories": "Calories",
         }
