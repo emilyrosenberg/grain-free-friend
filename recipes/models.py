@@ -25,6 +25,8 @@ CUISINE_TYPES = (
 
 LEVEL = (("easy", "Easy"), ("moderate", "Moderate"), ("fancy", "Fancy"))
 
+METHOD = (("stovetop", "Stovetop"), ("oven", "Oven"), ("microwave", "Microwave"))
+
 
 class Recipe(models.Model):
     """
@@ -53,8 +55,9 @@ class Recipe(models.Model):
     cuisine_types = models.CharField(
         max_length=50, choices=CUISINE_TYPES, default="african")
     level = models.CharField(
-        max_length=50, choices=LEVEL, default="easy"
-    )
+        max_length=50, choices=LEVEL, default="easy")
+    method = models.CharField(
+        max_length=50, choices=METHOD, default="stovetop")
 
     posted_date = models.DateTimeField(auto_now=True)
 
