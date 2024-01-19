@@ -4,7 +4,7 @@
 
 {% block content %} 
     <div class="container">
-        <div class="recipe-info mt-3 p-1">
+        <div class="recipe-info mt-5 p-1">
             <div class="recipe-img">
                 <img src="{{ recipe.image.url }}" alt="{{ recipe.image_alt }}" class="recipe-pic">
             </div>
@@ -25,7 +25,7 @@
                 {% endif %}
             </div>
         </div>
-        <div class="recipe-container">
+        <div class="recipe-container mt-3 mb-5">
             <div class="ingredients p-3">
                 <h2>Ingredients</h2>
                 <p>{{ recipe.ingredients|safe }}</p>

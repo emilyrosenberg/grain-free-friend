@@ -19,7 +19,8 @@
     /* Utils */
 
     --small-box-shadow: 1px -1px 7px 0 #3a3a3c;
-    --border: 1px solid #3a3a3c;
+    /* Change border color so it shows up */
+    --border: 2px solid #3a3a3c;
 }
 
 html, body {
@@ -42,7 +43,6 @@ main {
 }
 
 .btn {
-    /* Change border color so it shows up */
     border: var(--border);
 }
 
@@ -54,6 +54,7 @@ main {
 
 .navbar {
     background-color: var(--cream);
+    border-bottom: var(--border);
     box-shadow: var(--small-box-shadow);
 }
 
@@ -65,9 +66,10 @@ img.logo {
     width: 12rem;
 }
 
-.active {
-    border-bottom: 2px solid var(--off-black);
-    font-weight: 500;
+a.nav-link.active {
+    /* border-bottom: 2px solid var(--off-black); */
+    font-weight: 600;
+    color: var(--green);
 }
 
 /* Form */
@@ -105,7 +107,12 @@ img.logo {
 .recipe-container {
     display: flex;
     flex-direction: column;
+    border: var(--border);
 }
+
+/* .recipe-container div {
+    border: var(--border);
+} */
 
 .ingredients, .instructions, .recipe-detail {
     width: 100%;
