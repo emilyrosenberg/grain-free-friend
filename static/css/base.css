@@ -20,7 +20,7 @@
 
     --small-box-shadow: 1px -1px 7px 0 #3a3a3c;
     /* Change border color so it shows up */
-    --border: 2px solid #3a3a3c;
+    --border: 2px solid #f1442e;
 }
 
 html, body {
@@ -37,18 +37,24 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--title);
 }
 
+h1 {
+    color: var(--red);
+}
+
 main {
     flex: 1 0 auto;
-    background-color: var(--cream);
+    background-color: var(--off-white);
 }
 
 .btn {
     border: var(--border);
+    background-color: var(--peach);
+    color: var(--off-black);
+    font-weight: 600;
 }
 
 .horiz-line {
-    /* Change color */
-    color: var(--off-black);
+    color: var(--red);
 }
 /* Header */
 
@@ -56,6 +62,11 @@ main {
     background-color: var(--cream);
     border-bottom: var(--border);
     box-shadow: var(--small-box-shadow);
+}
+
+.custom-toggler {
+    border-color: var(--red);
+    border-width: 2px;
 }
 
 a.nav-link {
@@ -80,6 +91,7 @@ a.nav-link.active {
     margin: 3% auto;
     box-shadow: var(--small-box-shadow);
     border-radius: 5px;
+    background-color: var(--cream);
 }
 
 /* Recipes */
@@ -87,6 +99,7 @@ a.nav-link.active {
 .card {
     height: 90%;
     margin-top: 1rem;
+    box-shadow: var(--small-box-shadow);
 }
 
 .recipes {
@@ -109,10 +122,6 @@ a.nav-link.active {
     flex-direction: column;
     border: var(--border);
 }
-
-/* .recipe-container div {
-    border: var(--border);
-} */
 
 .ingredients, .instructions, .recipe-detail {
     width: 100%;

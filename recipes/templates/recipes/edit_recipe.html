@@ -3,15 +3,18 @@
 {% block title %}Edit Recipe{% endblock %}
 
 {% block content %}
+<div class="text-center mt-3">
+    <p>Please edit your recipe below. Thanks for making GFF even better!</p>
+</div>
 <div class="container">
     <!-- enctype makes sure it connects to cloudinary and loads as an image -->
-    <form method="POST" enctype="multipart/form-data" class="p-2 form">
-        <h1 class="text-center">Edit Recipe</h1>
+    <form method="POST" enctype="multipart/form-data" class="form p-2 ">
+        <h1 class="text-center pt-3">Edit Recipe</h1>
         {% csrf_token %}
         {{ form.media }}
         {{ form|crispy }}
-        <div class="text-center">
-            <button type="submit" class="btn btn-dark mt-2">Save Changes</button>
+        <div class="text-center pb-3">
+            <button type="submit" class="btn btn-dark mt-2">Save changes</button>
         </div>
     </form>
 </div>

@@ -4,12 +4,12 @@
 
 <!-- This page is for everthing the user is unauthorized to do -->
 
-{% block title %}Unauthorized Access{% endblock %} 
+{% block title %}Not found{% endblock %} 
 
 {% block content %} 
     <div class="container text-center pt-5 pb-3">
-        <h1>403 - Unauthorized Access</h1>
-        <p>Oops, that's not possible right now!</p>
+        <h1>404 - Not found</h1>
+        <p>Sorry, we couldn't find that right now!</p>
         <a href="{% url 'home' %}" class="btn btn-dark w-25">Home</a>
     </div>
 {% endblock %}
