@@ -9,3 +9,12 @@ class Index(ListView):
 
     def get_queryset(self):
         return self.model.objects.all()[:3]
+
+
+# class About(ListView):
+#     template_name = 'templates/about.html'
+#     model = Recipe
+    # context_object_name = 'recipes'
+
+    # def get_queryset(self):
+    #     return self.model.objects.all()[:3]
