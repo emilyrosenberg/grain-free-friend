@@ -30,6 +30,7 @@ class Recipes(ListView):
             recipes = self.model.objects.filter(
                 Q(title__icontains=query) |
                 Q(description__icontains=query) |
+                Q(ingredients__icontains=query) |
                 Q(instructions__icontains=query)
             )
         else:
