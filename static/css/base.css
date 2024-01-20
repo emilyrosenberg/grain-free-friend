@@ -53,6 +53,12 @@ main {
     font-weight: 600;
 }
 
+.btn:hover {
+    border: var(--border);
+    background-color: var(--red);
+    color: var(--cream);
+}
+
 .horiz-line {
     color: var(--red);
 }
@@ -73,14 +79,16 @@ a.nav-link {
     color: var(--off-black);
 }
 
+a.nav-link:hover {
+    color: var(--red);
+}
+
 img.logo {
     width: 12rem;
 }
 
 a.nav-link.active {
-    /* border-bottom: 2px solid var(--off-black); */
     font-weight: 600;
-    color: var(--green);
 }
 
 /* Form */
