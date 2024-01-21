@@ -42,7 +42,7 @@ It has full CRUD functionality; a user can
 #### Delete Recipe
 #### About
 #### Contact
-#### 404
+#### 403 & 404
 ### Features
 #### Header and Navigation
 #### Footer
@@ -53,9 +53,9 @@ It has full CRUD functionality; a user can
 
 ### Surface
 #### Colors
-The color palette is from [Lilybug Design](https://www.lilybugdesign.co.nz/colour-wall). I saw one of these designs used in a [PP4 project by Roshna Vakkee](https://github.com/RoshnaVakkeel/Little_Learners_Lab_Logs?tab=readme-ov-file), and found a beautiful one for my project. This palette is fresh and lively, as well as warm. It supports the Grain Free Friend branding: accessible, fun, supportive.
+The color palette is from [Lilybug Design](https://www.lilybugdesign.co.nz/colour-wall). I saw one of these designs used in a [PP4 project by Roshna Vakkee](https://github.com/RoshnaVakkeel/Little_Learners_Lab_Logs?tab=readme-ov-file), and found a beautiful one for my project. This palette is fresh and lively, as well as warm. It supports the Grain Free Friend branding: accessible, fun, supportive. <br>
 ![Color palette](https://www.lilybugdesign.co.nz/colour-wall)
-I used colorpicker to get the HEX tags for each color.
+I used colorpicker to get the HEX tags for each color. <br>
 Colors were picked with [imagecolorpicker.com](https://imagecolorpicker.com/en).
 
 #### Fonts
@@ -65,10 +65,10 @@ The title font is [Montserrat](https://fonts.google.com/specimen/Montserrat). Th
 The main font is [Raleway](https://fonts.google.com/specimen/Raleway). This is a friendly, readable font in a modern style. It makes the recipe ingredients and instructions very clear and accessible. <br>
 ![Raleway font](static/images/readme-images/font-raleway.png)
 #### Logo
-The logo represents 
+The logo represents <br>
 <!-- Add content about logo and how it was made -->
 It was created using the [wix.com logo maker](https://www.wix.com/logo/maker). <br>
-![Logo]()
+![Logo](static/images/logo.png)
 #### Favicon
 The favicon was created from the logo image using the [favico.io favicon converter](https://favicon.io/favicon-converter/). <br>
 ![Favicon](static/images/readme-images/favicon-image.png)
@@ -107,6 +107,8 @@ The first time I tried to add an input field, the site would not run. I realized
 
 ## Deployment
 ### Heroku
+- Create accounts in Heroku and ElephantSQL
+- 
 ### Github
 
 ## Credits
