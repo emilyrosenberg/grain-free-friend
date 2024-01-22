@@ -1,1 +1,1 @@
-web: gunicorn Your-project-name.wsgi
+web: gunicorn grain-free-friend.wsgi
