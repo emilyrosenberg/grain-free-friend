@@ -8,7 +8,8 @@
 <div class="container text-center pt-5 pb-3">
   <h1>{% trans "Sign Up" %}</h1>
 
-  <p>{% blocktrans %}Are we already friends? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+  <p>{% blocktrans %}Thanks for joining us, it's so great to have you here!{% endblocktrans %}</p>
+  <p class="opacity-75">{% blocktrans %}Oh, are we already friends? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
 
   <form class="form p-2" id="signup_form" method="post" action="{% url 'account_signup' %}">
     {% csrf_token %}

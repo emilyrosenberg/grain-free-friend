@@ -22,5 +22,6 @@ urlpatterns = [
     path('djrichtextfield/', include('djrichtextfield.urls')),
     # finds the urls file within the home app
     path('', include('home.urls')),
+    path('about/', include('about.urls')),
     path('recipes/', include('recipes.urls'))
 ]
