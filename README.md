@@ -46,6 +46,7 @@ It has full CRUD functionality; a user can
 ### Features
 #### Header and Navigation
 #### Footer
+- Social media icons were created with [UXWing](https://uxwing.com/).
 #### Account
 #### Create an Account
 #### Login
@@ -54,7 +55,7 @@ It has full CRUD functionality; a user can
 ### Surface
 #### Colors
 The color palette is from [Lilybug Design](https://www.lilybugdesign.co.nz/colour-wall). I saw one of these designs used in a [PP4 project by Roshna Vakkee](https://github.com/RoshnaVakkeel/Little_Learners_Lab_Logs?tab=readme-ov-file), and found a beautiful one for my project. This palette is fresh and lively, as well as warm. It supports the Grain Free Friend branding: accessible, fun, supportive. <br>
-![Color palette](https://www.lilybugdesign.co.nz/colour-wall)
+![Color palette](static/images/readme-images/color-palette.png)
 I used colorpicker to get the HEX tags for each color. <br>
 Colors were picked with [imagecolorpicker.com](https://imagecolorpicker.com/en).
 
@@ -73,7 +74,7 @@ It was created using the [wix.com logo maker](https://www.wix.com/logo/maker). <
 The favicon was created from the logo image using the [favico.io favicon converter](https://favicon.io/favicon-converter/). <br>
 ![Favicon](static/images/readme-images/favicon-image.png)
 #### Images
-The images are from
+The recipe images are either my personal photos or from [Unsplash](https://unsplash.com/).
 <!-- Add content about images -->
 <br>
 
@@ -99,15 +100,46 @@ The first time I tried to add an input field, the site would not run. I realized
 `python3 manage.py migrate`
 - Multi-select field <br>
 I wanted to add something like tags to show the attributes of each recipe. It seemed like this would be possible with CheckboxSelectMultiple. I created the code but it did not work. I searched Stack Overflow, asked my fellow students, asked ChatGPT, and finally found out that I needed a later version of Django to run crispy forms, but only an earlier version could implement CheckboxSelectMultiple. Unfortunately I had to abandon the idea of a multi-select field. Instead I used 3 dropdown menus to list up to 3 attributes of the recipe. It is not the best UX, but they are searchable, and visible on each recipe card as if they are tags.
-- Loading static files on deployed site <br>
-I installed whitenoise per [these instructions](https://devmaesters.com/blog/34).
+- Loading static files on the deployed site <br>
+The static files wouldn't load, so I did some research and found [from Stack Overflow](https://stackoverflow.com/questions/28961177/heroku-static-files-not-loading-django) that I needed to install whitenoise. I installed whitenoise per [these instructions](https://devmaesters.com/blog/34). After I updated my requirements.txt, the files loaded.
 
 ## Future Implementations
 
 ## Languages, Libraries, and Software
 ### Languages
+- HTML
+- CSS
+- Javascript
+- Python
 ### Modules and Packages
-### Framesworks and Websites
+- black (code formatter)
+- cloudinary (image hosting)
+- crispy-bootstrap5
+- dj-database-url
+- django-allauth (authorization package)
+- django-cloudinary-storage
+- django-crispy-forms (styles forms)
+- django-resized (resizes a photo submitted in the form)
+- django-richtextfield (allows markdown styling in input fields)
+- gunicorn (server for WSGI applications)
+- psycopg2
+- whitenoise (allows static files to load in deployed app)
+### Frameworks and Websites
+- Bootstrap5
+- Django
+- Github
+- Cloudinary
+- PostgreSQL (ElephantSQL)
+- Heroku
+- VS Code
+- Google Chrome Dev Tools
+- Google Fonts
+- Colorpicker
+- UXWing
+- Unsplash
+- PEP8
+- W3C - HTML
+- W3C - CSS
 
 ## Deployment
 ### Heroku
@@ -120,6 +152,7 @@ I installed whitenoise per [these instructions](https://devmaesters.com/blog/34)
 ### Media
 ### Thank you
 - This project was developed using the [Django Recipe Sharing tutorial by Dee McG](https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=1). I am indebted to her for the basic styling of the header, footer, and forms, the CRUD functionality of the recipes, class-based views, and querying.
+- The project was also inspired by Code Institute's Django Blog Walkthrough. I used this to help create the success alerts.
 - Inspiration for this readme came from [gStarhigh](https://github.com/gStarhigh/pro4).
 
 <!-- ## Features
