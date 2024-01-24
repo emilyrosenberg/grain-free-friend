@@ -17,6 +17,9 @@ class RecipeForm(forms.ModelForm):
             "image_alt",
             "level",
             "method",
+            "tag1",
+            "tag2",
+            "tag3"
         ]
 
         ingredients = forms.CharField(widget=RichTextWidget())
@@ -36,4 +39,7 @@ class RecipeForm(forms.ModelForm):
             "image_alt": "Image description",
             "level": "Level",
             "method": "Method",
+            "tag1": "Tag 1",
+            "tag2": "Tag 2",
+            "tag3": "Tag 3"
         }

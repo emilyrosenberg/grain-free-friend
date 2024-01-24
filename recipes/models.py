@@ -10,6 +10,12 @@ LEVEL = (("easy", "Easy"), ("moderate", "Moderate"), ("fancy", "Fancy"))
 
 METHOD = (("stovetop", "Stovetop"), ("oven", "Oven"), ("microwave", "Microwave"))
 
+TAG1 = (("keto", "Keto"), ("vegan", "Vegan"), ("gluten-free", "Gluten-free"), ("parve", "Parve"), ("nut-free", "Nut-free"), ("dairy-free", "Dairy-free"))
+
+TAG2 = (("keto", "Keto"), ("vegan", "Vegan"), ("gluten-free", "Gluten-free"), ("parve", "Parve"), ("nut-free", "Nut-free"), ("dairy-free", "Dairy-free"), ("--", "--"))
+
+TAG3 = (("keto", "Keto"), ("vegan", "Vegan"), ("gluten-free", "Gluten-free"), ("parve", "Parve"), ("nut-free", "Nut-free"), ("dairy-free", "Dairy-free"), ("--", "--"))
+
 
 class Recipe(models.Model):
     """
@@ -38,6 +44,12 @@ class Recipe(models.Model):
         max_length=50, choices=LEVEL, default="easy")
     method = models.CharField(
         max_length=50, choices=METHOD, default="stovetop")
+    tag1 = models.CharField(
+        max_length=50, choices=TAG1, default="gluten-free")
+    tag2 = models.CharField(
+        max_length=50, choices=TAG2, default="--")
+    tag3 = models.CharField(
+        max_length=50, choices=TAG3, default="--")
 
     posted_date = models.DateTimeField(auto_now=True)
 

@@ -97,6 +97,8 @@ The installed libraries would not run. The error message was: <i>Import "django_
 The first time I tried to add an input field, the site would not run. I realized I needed to make migrations, which fixed the bug. I ran: <br>
 `python3 manage.py makemigrations` <br>
 `python3 manage.py migrate`
+- Multi-select field <br>
+I wanted to add something like tags to show the attributes of each recipe. It seemed like this would be possible with CheckboxSelectMultiple. I created the code but it did not work. I searched Stack Overflow, asked my fellow students, asked ChatGPT, and finally found out that I needed a later version of Django to run crispy forms, but only an earlier version could implement CheckboxSelectMultiple. Unfortunately I had to abandon the idea of a multi-select field. Instead I used 3 dropdown menus to list up to 3 attributes of the recipe. It is not the best UX, but they are searchable, and visible on each recipe card as if they are tags.
 
 ## Future Implementations
 

@@ -15,6 +15,7 @@
                 <p>{{recipe.description}}</p>
                 <p><strong>Level: </strong> {{ recipe.level|title }}</p>
                 <p><strong>Method: </strong> {{ recipe.method|title }}</p>
+                <p><strong>Tags: </strong> {{ recipe.tag1|title }}, {{ recipe.tag2|title }}, {{ recipe.tag3|title }}</p>
 
                 {% if request.user == recipe.user %} 
                 <div class="text-center p-3">
