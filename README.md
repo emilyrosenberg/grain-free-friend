@@ -117,7 +117,7 @@ I wanted to add something like tags to show the attributes of each recipe. It se
 ### Content
 ### Media
 ### Thank you
-- This project was developed using the [Django Recipe Sharing tutorial by Dee Mc](https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=1). I am indebted to her for the basic styling of the header, footer, and forms, the CRUD functionality of the recipes, class-based views, and querying.
+- This project was developed using the [Django Recipe Sharing tutorial by Dee McG](https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=1). I am indebted to her for the basic styling of the header, footer, and forms, the CRUD functionality of the recipes, class-based views, and querying.
 - Inspiration for this readme came from [gStarhigh](https://github.com/gStarhigh/pro4).
 
 <!-- ## Features

@@ -22,12 +22,35 @@
     <!-- For reusable elements (header, footer, etc) -->
     {% include 'includes/header.html' %}
 
+    <!-- Alerts, from Django blog walkthrough -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+                    {{ message | safe }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
     <main>
         {% block content %}
         {% endblock %}
     </main>
 
     {% include 'includes/footer.html' %}
+
+    <!-- Automatic timeout for alerts, from Django blog walkthrough -->
+    <script>
+        setTimeout(function () {
+            let messages = document.getElementById('msg');
+            let alert = new bootstrap.Alert(messages);
+            alert.close();
+        }, 2500);
+    </script>
     
 </body>
 </html>
