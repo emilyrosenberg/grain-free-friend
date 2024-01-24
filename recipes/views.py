@@ -1,3 +1,5 @@
+from django.contrib import messages
+
 from django.views.generic import (
     CreateView, ListView, DetailView, DeleteView, UpdateView
 )
@@ -5,7 +7,6 @@ from django.views.generic import (
 from django.contrib.auth.mixins import (
     UserPassesTestMixin, LoginRequiredMixin
 )
-
 from django.db.models import Q
 
 # This mixin makes sure that only logged in users can create a recipe
@@ -58,13 +59,18 @@ class AddRecipe(LoginRequiredMixin, CreateView):
     form_class = RecipeForm
     success_url = "/recipes/"
 
-    #
     def form_valid(self, form):
         # Update form's instance of the user and set it to the person who is creating the recipe (the logged in user)
         form.instance.user = self.request.user
         return super(AddRecipe, self).form_valid(form)
+    
+    # Class-based views form_valid handling from https://docs.djangoproject.com/en/5.0/topics/class-based-views/generic-editing/
+    def form_valid(self, form):
+        messages.success(self.request, 'Your recipe has been added!')
+        return super(AddRecipe, self).form_valid(form)
+    
 
-
+# These mixins make sure only the logged in user can edit their recipes
 class EditRecipe(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """ Edit a recipe """
     template_name = 'recipes/edit_recipe.html'
@@ -74,6 +80,10 @@ class EditRecipe(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
     def test_func(self):
         return self.request.user == self.get_object().user
+    
+    def form_valid(self, form):
+        messages.success(self.request, 'Your recipe has been updated!')
+        return super(EditRecipe, self).form_valid(form)
 
 
 # These mixins make sure only the logged in user can delete their recipes
@@ -84,3 +94,7 @@ class DeleteRecipe(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     def test_func(self):
         return self.request.user == self.get_object().user
+    
+    def form_valid(self, form):
+        messages.success(self.request, 'Your recipe has been successfully deleted.')
+        return super(DeleteRecipe, self).form_valid(form)

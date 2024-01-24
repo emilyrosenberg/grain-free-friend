@@ -79,7 +79,7 @@ DJRICHTEXTFIELD_CONFIG = {
     }
 }
 
-# From Django blog walkthrough
+# Alert messages from Django blog walkthrough
 MESSAGE_TAGS = {
         messages.DEBUG: 'alert-info',
         messages.INFO: 'alert-info',
