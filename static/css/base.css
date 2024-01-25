@@ -13,12 +13,12 @@
     --red: #f1442e;
     --green: #a7ca55;
     --dark-green: #38574f;
-    --off-black: #3a3a3c;
-    --off-white: #fefcf5;
+    --off-black: #100c08;
+    --off-white: #fffaf0;
 
     /* Utils */
 
-    --small-box-shadow: 1px -1px 7px 0 #3a3a3c;
+    --small-box-shadow: 1px -1px 7px 0 #100c08;
     /* Change border color so it shows up */
     --border: 2px solid #f1442e;
 }
@@ -31,6 +31,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: var(--main-font);
+    color: var(--off-black)
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -60,7 +61,7 @@ main {
 }
 
 .horiz-line {
-    color: var(--red);
+    color: var(--off-black);
 }
 /* Header */
 
@@ -176,6 +177,7 @@ a.img-container:hover {
 .centered {
     width: 100%;
     background-color: var(--off-black);
+    opacity: 90%;
     position: absolute;
     top: 50%;
     left: 50%;

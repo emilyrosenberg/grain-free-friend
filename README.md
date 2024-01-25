@@ -54,10 +54,11 @@ It has full CRUD functionality; a user can
 
 ### Surface
 #### Colors
-The color palette is from [Lilybug Design](https://www.lilybugdesign.co.nz/colour-wall). I saw one of these designs used in a [PP4 project by Roshna Vakkee](https://github.com/RoshnaVakkeel/Little_Learners_Lab_Logs?tab=readme-ov-file), and found a beautiful one for my project. This palette is fresh and lively, as well as warm. It supports the Grain Free Friend branding: accessible, fun, supportive. <br>
+The color palette is from [Lilybug Design](https://www.lilybugdesign.co.nz/colour-wall). I saw one of these designs used in a [PP4 project by Roshna Vakkee](https://github.com/RoshnaVakkeel/Little_Learners_Lab_Logs?tab=readme-ov-file), and found a beautiful one for my project. This palette is fresh and lively, as well as warm. It supports the Grain Free Friend branding: accessible, fun, warm, supportive. <br>
 ![Color palette](static/images/readme-images/color-palette.png)
 I used colorpicker to get the HEX tags for each color. <br>
-Colors were picked with [imagecolorpicker.com](https://imagecolorpicker.com/en).
+Colors were picked with [imagecolorpicker.com](https://imagecolorpicker.com/en). <br>
+Custom black and white were chosen from [Color Meanings](https://www.color-meanings.com/) to complement the colorful palette.
 
 #### Fonts
 The fonts used in this project are from [Google Fonts](https://fonts.google.com/). <br>
@@ -81,6 +82,7 @@ The recipe images are either my personal photos or from [Unsplash](https://unspl
 They are stored in and accessed through [Cloudinary](https://cloudinary.com).
 
 #### Background
+#### Content
 
 ## Testing
 #### Lighthouse

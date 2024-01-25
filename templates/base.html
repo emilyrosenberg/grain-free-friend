@@ -42,7 +42,8 @@
     </main>
 
     {% include 'includes/footer.html' %}
-
+    
+    {% block extra_js %}
     <!-- Automatic timeout for alerts, from Django blog walkthrough -->
     <script>
         setTimeout(function () {
@@ -51,6 +52,7 @@
             alert.close();
         }, 2500);
     </script>
+    {% endblock %}
     
 </body>
 </html>
