@@ -8,13 +8,6 @@
     Favorites
 </h1>
 <div class="container d-flex flex-row flex-wrap justify-content-center">
-
-    <!-- <div class="container text-center pt-5 pb-3">
-        <h1 class="main-title mx-auto">Favorites</h1> -->
-    <h2>Saved Recipes</h2>
-    <p class="pt-4">
-        Here are all the recipes you've saved.
-    </p>
     <div class="container d-flex flex-row flex-wrap justify-content-center">
         <!-- Recipes show here -->
         {% for option in options %}
@@ -30,11 +23,8 @@
                 </div>
             </a>
         {% endfor %}
-        <p>
-            Want to find even more favorites?
-        </p>
-        <!-- Add real link to this button -->
-        <a href="#" class="btn mb-3">Favorite finder</a>
     </div>
+    <!-- Add real link to this button -->
+    <a href="#" class="btn mb-3">Favorite finder</a>
 </div>
 {% endblock %}
