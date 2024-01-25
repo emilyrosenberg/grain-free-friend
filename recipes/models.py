@@ -31,7 +31,9 @@ class Recipe(models.Model):
     ingredients = RichTextField(max_length=10000, null=False, blank=False)
     # If file is larger, it will scale to the right size and upload to Cloudinary
     image = ResizedImageField(
-        size=[400, None],
+        # Crop to a square https://stackoverflow.com/questions/71709173/fetch-image-and-crop-before-save-django
+        size=[400, 400],
+        crop=['middle', 'center'],
         quality=75,
         upload_to="recipes/",
         force_format="WEBP",

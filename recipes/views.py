@@ -57,18 +57,15 @@ class AddRecipe(LoginRequiredMixin, CreateView):
     template_name = "recipes/add_recipe.html"
     model = Recipe
     form_class = RecipeForm
-    success_url = "/recipes/"
+    success_url = '/recipes/'
 
     def form_valid(self, form):
         # Update form's instance of the user and set it to the person who is creating the recipe (the logged in user)
         form.instance.user = self.request.user
-        return super(AddRecipe, self).form_valid(form)
-    
-    # Class-based views form_valid handling from https://docs.djangoproject.com/en/5.0/topics/class-based-views/generic-editing/
-    def form_valid(self, form):
         messages.success(self.request, 'Your recipe has been added!')
         return super(AddRecipe, self).form_valid(form)
     
+    # Class-based views form_valid handling from https://docs.djangoproject.com/en/5.0/topics/class-based-views/generic-editing/
 
 # These mixins make sure only the logged in user can edit their recipes
 class EditRecipe(LoginRequiredMixin, UserPassesTestMixin, UpdateView):

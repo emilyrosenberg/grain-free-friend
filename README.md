@@ -151,7 +151,7 @@ The static files wouldn't load, so I did some research and found [from Stack Ove
 ### Content
 ### Media
 ### Thank you
-- This project was developed using the [Django Recipe Sharing tutorial by Dee McG](https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=1). I am indebted to her for the basic styling of the header, footer, and forms, the CRUD functionality of the recipes, class-based views, and querying.
+- This project was developed using the [Django Recipe Sharing tutorial by Dee Mc](https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=1). I am indebted to her for the basic styling of the header, footer, and forms, the CRUD functionality of the recipes, class-based views, and querying.
 - The project was also inspired by Code Institute's Django Blog Walkthrough. I used this to help create the success alerts.
 - Inspiration for this readme came from [gStarhigh](https://github.com/gStarhigh/pro4).
 
