@@ -23,5 +23,6 @@ urlpatterns = [
     # finds the urls file within the home app
     path('', include('home.urls')),
     path('about/', include('about.urls')),
-    path('recipes/', include('recipes.urls'))
+    path('recipes/', include('recipes.urls')),
+    path('favorites/', include('favorites.urls')),
 ]

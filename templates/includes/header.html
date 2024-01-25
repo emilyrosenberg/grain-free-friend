@@ -29,6 +29,9 @@
               <!-- Shows or hides appropriate login/logout options -->
               {% if request.user.is_authenticated %}
               <li class="nav-item">
+                <a class="nav-link {% if url_name == 'favorites' %}active{% endif %}" href="{% url 'favorites' %}">Favorites</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link {% if url_name == 'accounts_logout' %}active{% endif %}" href="/accounts/logout/">Logout</a>
               </li>
               {% else %}

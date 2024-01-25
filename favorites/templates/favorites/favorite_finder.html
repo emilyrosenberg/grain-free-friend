@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Favorite Finder{% endblock %}
+
+{% block content %}
+<div class="container text-center pt-5 pb-3">
+    <h1 class="main-title mx-auto">Favorite Finder</h1>
+
+    <h2>Find your new favorites here</h2>
+
+    <p class="pt-4">
+        Generate a new favorite
+    </p>
+    <p>
+        Want to see everything at once?
+    </p>
+    <a href="{% url 'recipes' %}" class="btn btn-dark w-25">All Recipes</a>
+</div>
+
+{% endblock %}
