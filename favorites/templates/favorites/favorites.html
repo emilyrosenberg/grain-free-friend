@@ -13,23 +13,23 @@
         <div class="container d-flex flex-row flex-wrap justify-content-center">
            <!-- Recipes show here -->
             {% for option in options %}
-                <div class="favorite">
-                    <div>
-                        <img src="{{ option.recipe.image.url }}" alt="{{ option.recipe.image_alt }}">
+                <a href="{% url 'recipe_detail' option.recipe.id %}" class="recipes" aria-label="Click to view {{recipe.title}}"></a>
+                    <div class="favorite card m-3 text-center" style="width: 18rem;">
+                        <div>
+                            <img src="{{ option.recipe.image.url }}" class="card-img-top" alt="{{ option.recipe.image_alt }}">
+                        </div>
+                        <div class="favorite-info text-center card-body">
+                            <h2 class="card-title">{{ option.recipe.title }}</h2>
+                            <p class="card-text pb-3">{{ option.recipe.description }}</p>
+                        </div>
                     </div>
-                    <div class="favorite-info">
-                        <h3 class="text-center">
-                            <a href="{% url 'recipe_detail' option.recipe.id %}">{{ option.recipe.title }}</a>
-                        </h3>
-                        <p>{{ option.recipe.description }}</p>
-                    </div>
-                </div>
+                </a>
             {% endfor %}
         </div>
         <p>
             Want to find even more favorites?
         </p>
         <!-- Add real link to this button -->
-        <a href="#" class="btn btn-dark w-25">Favorite finder</a>
+        <a href="#" class="btn btn-dark w-sm-25">Favorite finder</a>
     </div>
 {% endblock %}
