@@ -52,6 +52,8 @@ main {
     background-color: var(--peach);
     color: var(--off-black);
     font-weight: 600;
+    width: 25%;
+    min-width: 100px;
 }
 
 .btn:hover {

@@ -19,8 +19,8 @@
 
                 {% if request.user == recipe.user %} 
                 <div class="text-center p-3">
-                    <a href="{% url 'edit_recipe' recipe.id %}" class="btn btn-dark w-sm-25">Edit</a>
-                    <a href="{% url 'delete_recipe' recipe.id %}" class="btn btn-dark w-sm-25">Delete</a>
+                    <a href="{% url 'edit_recipe' recipe.id %}" class="btn">Edit</a>
+                    <a href="{% url 'delete_recipe' recipe.id %}" class="btn">Delete</a>
                 </div>
                 <hr class="horiz-line">
                 {% endif %}
