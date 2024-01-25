@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-
 {% load static %}
 
 {% block title %}Favorites{% endblock %} 
@@ -7,12 +6,26 @@
 {% block content %} 
     <div class="container text-center pt-5 pb-3">
         <h1 class="main-title mx-auto">Favorites</h1>
-    
         <h2>Saved Recipes</h2>
-    
         <p class="pt-4">
             Here are all the recipes you've saved.
         </p>
+        <div class="container d-flex flex-row flex-wrap justify-content-center">
+           <!-- Recipes show here -->
+            {% for option in options %}
+                <div class="favorite">
+                    <div>
+                        <img src="{{ option.recipe.image.url }}" alt="{{ option.recipe.image_alt }}">
+                    </div>
+                    <div class="favorite-info">
+                        <h3 class="text-center">
+                            <a href="{% url 'recipe_detail' option.recipe.id %}">{{ option.recipe.title }}</a>
+                        </h3>
+                        <p>{{ option.recipe.description }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
         <p>
             Want to find even more favorites?
         </p>

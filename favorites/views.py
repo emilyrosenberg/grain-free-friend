@@ -10,9 +10,9 @@ class Favorites(LoginRequiredMixin, TemplateView):
     template_name = "favorites/favorites.html"
 
     def get_context_data(self, **kwargs):
-        option = Option.objects.filter(user=self.request.user)
+        options = Option.objects.filter(user=self.request.user)
         # Add code for more filters here
 
-        context = {"option": option}
+        context = {"options": options}
 
         return context
