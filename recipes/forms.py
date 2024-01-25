@@ -19,7 +19,7 @@ class RecipeForm(forms.ModelForm):
             "method",
             "tag1",
             "tag2",
-            "tag3"
+            "tag3",
         ]
 
         ingredients = forms.CharField(widget=RichTextWidget())
@@ -41,5 +41,5 @@ class RecipeForm(forms.ModelForm):
             "method": "Method",
             "tag1": "Tag 1",
             "tag2": "Tag 2",
-            "tag3": "Tag 3"
+            "tag3": "Tag 3",
         }

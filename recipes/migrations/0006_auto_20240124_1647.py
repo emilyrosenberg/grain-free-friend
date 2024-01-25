@@ -4,25 +4,59 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('recipes', '0005_auto_20240124_1004'),
+        ("recipes", "0005_auto_20240124_1004"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='recipe',
-            name='tag1',
-            field=models.CharField(choices=[('keto', 'Keto'), ('vegan', 'Vegan'), ('gluten-free', 'Gluten-free'), ('parve', 'Parve'), ('nut-free', 'Nut-free'), ('dairy-free', 'Dairy-free')], default='gluten-free', max_length=50),
+            model_name="recipe",
+            name="tag1",
+            field=models.CharField(
+                choices=[
+                    ("keto", "Keto"),
+                    ("vegan", "Vegan"),
+                    ("gluten-free", "Gluten-free"),
+                    ("parve", "Parve"),
+                    ("nut-free", "Nut-free"),
+                    ("dairy-free", "Dairy-free"),
+                ],
+                default="gluten-free",
+                max_length=50,
+            ),
         ),
         migrations.AlterField(
-            model_name='recipe',
-            name='tag2',
-            field=models.CharField(choices=[('keto', 'Keto'), ('vegan', 'Vegan'), ('gluten-free', 'Gluten-free'), ('parve', 'Parve'), ('nut-free', 'Nut-free'), ('dairy-free', 'Dairy-free'), ('--', '--')], default='--', max_length=50),
+            model_name="recipe",
+            name="tag2",
+            field=models.CharField(
+                choices=[
+                    ("keto", "Keto"),
+                    ("vegan", "Vegan"),
+                    ("gluten-free", "Gluten-free"),
+                    ("parve", "Parve"),
+                    ("nut-free", "Nut-free"),
+                    ("dairy-free", "Dairy-free"),
+                    ("--", "--"),
+                ],
+                default="--",
+                max_length=50,
+            ),
         ),
         migrations.AlterField(
-            model_name='recipe',
-            name='tag3',
-            field=models.CharField(choices=[('keto', 'Keto'), ('vegan', 'Vegan'), ('gluten-free', 'Gluten-free'), ('parve', 'Parve'), ('nut-free', 'Nut-free'), ('dairy-free', 'Dairy-free'), ('--', '--')], default='--', max_length=50),
+            model_name="recipe",
+            name="tag3",
+            field=models.CharField(
+                choices=[
+                    ("keto", "Keto"),
+                    ("vegan", "Vegan"),
+                    ("gluten-free", "Gluten-free"),
+                    ("parve", "Parve"),
+                    ("nut-free", "Nut-free"),
+                    ("dairy-free", "Dairy-free"),
+                    ("--", "--"),
+                ],
+                default="--",
+                max_length=50,
+            ),
         ),
     ]
