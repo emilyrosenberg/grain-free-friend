@@ -4,32 +4,37 @@
 {% block title %}Favorites{% endblock %} 
 
 {% block content %} 
-    <div class="container text-center pt-5 pb-3">
-        <h1 class="main-title mx-auto">Favorites</h1>
-        <h2>Saved Recipes</h2>
-        <p class="pt-4">
-            Here are all the recipes you've saved.
-        </p>
-        <div class="container d-flex flex-row flex-wrap justify-content-center">
-           <!-- Recipes show here -->
-            {% for option in options %}
-                <a href="{% url 'recipe_detail' option.recipe.id %}" class="recipes" aria-label="Click to view {{recipe.title}}"></a>
-                    <div class="favorite card m-3 text-center" style="width: 18rem;">
-                        <div>
-                            <img src="{{ option.recipe.image.url }}" class="card-img-top" alt="{{ option.recipe.image_alt }}">
-                        </div>
-                        <div class="favorite-info text-center card-body">
-                            <h2 class="card-title">{{ option.recipe.title }}</h2>
-                            <p class="card-text pb-3">{{ option.recipe.description }}</p>
-                        </div>
+<h1 class="text-center p-2 d-block pt-5 pb-3">
+    Favorites
+</h1>
+<div class="container d-flex flex-row flex-wrap justify-content-center">
+
+    <!-- <div class="container text-center pt-5 pb-3">
+        <h1 class="main-title mx-auto">Favorites</h1> -->
+    <h2>Saved Recipes</h2>
+    <p class="pt-4">
+        Here are all the recipes you've saved.
+    </p>
+    <div class="container d-flex flex-row flex-wrap justify-content-center">
+        <!-- Recipes show here -->
+        {% for option in options %}
+            <a href="{% url 'recipe_detail' option.recipe.id %}" class="recipes" aria-label="Click to view {{recipe.title}}">
+                <div class="favorite card m-3 text-center" style="width: 18rem;">
+                    <div>
+                        <img src="{{ option.recipe.image.url }}" class="card-img-top" alt="{{ option.recipe.image_alt }}">
                     </div>
-                </a>
-            {% endfor %}
-        </div>
+                    <div class="favorite-info text-center card-body">
+                        <h2 class="card-title">{{ option.recipe.title }}</h2>
+                        <p class="card-text pb-3">{{ option.recipe.description }}</p>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
         <p>
             Want to find even more favorites?
         </p>
         <!-- Add real link to this button -->
-        <a href="#" class="btn btn-dark w-sm-25">Favorite finder</a>
+        <a href="#" class="btn btn-dark w-sm-25 mb-3">Favorite finder</a>
     </div>
+</div>
 {% endblock %}
