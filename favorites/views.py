@@ -22,6 +22,7 @@ class Favorites(TemplateView):
 
         return context
 
+
 class GetOption(LoginRequiredMixin, TemplateView):
     """Get option based on search queries or empty input"""
 
@@ -53,9 +54,10 @@ class GetOption(LoginRequiredMixin, TemplateView):
             context = {}
 
         return context
-    
-    
+
+
 class AddOption(View):
+    """ Add recipe to favorites page """
     def post(self, request, pk):
         recipe = Recipe.objects.get(pk=pk)
         option, created = Option.objects.get_or_create(

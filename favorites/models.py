@@ -4,7 +4,7 @@ from recipes.models import Recipe
 
 
 class Option(models.Model):
-    """ Option model """
+    """Option model"""
 
     user = models.ForeignKey(
         User, related_name="option_owner", on_delete=models.CASCADE
