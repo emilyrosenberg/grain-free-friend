@@ -4,18 +4,44 @@
 {% block title %}Favorite Finder{% endblock %}
 
 {% block content %}
-<div class="container text-center pt-5 pb-3">
-    <h1 class="main-title mx-auto">Favorite Finder</h1>
+<div class="container">
+    <div class="text-center pt-5 pb-3">
+        <h1 class="main-title mx-auto pt-2">Favorite Finder</h1>
+        <h2>Find your new favorites here</h2>
+        <form method="GET" class="form p-4">
+            {% csrf_token %}
+            <p>Generate a new favorite now</p>
+            <input type="text" class="form-control mb-2" name="search" value="{{ request.GET.search }}" placeholder="Dairy-free, Bread..." aria-label="Search">
+            <button type="submit" class="btn mt-3">Search</button>
+        </form>
+        {% if recipe %}      
+         <a href="{% url 'recipe_detail' recipe.id %}" class="recipes" aria-label="Click to view {{recipe.title}}">
+                <div class="favorite card m-3 text-center mx-auto" style="width: 18rem;">
+                    <div>
+                        <img src="{{ recipe.image.url }}" class="card-img-top" alt="{{ option.recipe.image_alt }}">
+                    </div>
+                    <div class="favorite-info text-center card-body">
+                        <h2 class="card-title">{{ recipe.title }}</h2>
+                        <p class="card-text">{{ recipe.description }}</p>
 
-    <h2>Find your new favorites here</h2>
+                        <form action="#" method="POST">
+                            {% csrf_token %}
+                            <div class="text-center">
+                                <button class="btn" type="submit">Add Recipe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+    <div class="pt-4">
+        <p>
+            Want to see everything at once?
+        </p>
+        <a href="{% url 'recipes' %}" class="btn">All Recipes</a>
+    </div>
+    </div>
 
-    <p class="pt-4">
-        Generate a new favorite
-    </p>
-    <p>
-        Want to see everything at once?
-    </p>
-    <a href="{% url 'recipes' %}" class="btn">All Recipes</a>
 </div>
 
 {% endblock %}
