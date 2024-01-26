@@ -1,8 +1,6 @@
 from django.views.generic import TemplateView
 from django.contrib.auth.mixins import LoginRequiredMixin
-
 from django.db.models import Q
-
 from .models import Option
 from recipes.models import Recipe
 import random
@@ -19,7 +17,6 @@ class Favorites(TemplateView):
         context = {"options": options}
 
         return context
-
 
 class GetOption(LoginRequiredMixin, TemplateView):
     """Get option based on search queries or empty input"""
@@ -44,11 +41,11 @@ class GetOption(LoginRequiredMixin, TemplateView):
                 recipes = []
             else:
                 recipes = Recipe.objects.filter()
-# Returns a random recipe or if there are no recipes in the database, returns empty
+        # Returns a random recipe or if there are no recipes in the database, returns empty
         if len(recipes) > 0:
             recipe = random.choice(recipes)
             context = {"recipe": recipe}
         else:
             context = {}
-            
+
         return context
