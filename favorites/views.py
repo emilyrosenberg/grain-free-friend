@@ -1,5 +1,7 @@
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, View
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 from django.db.models import Q
 from .models import Option
 from recipes.models import Recipe
@@ -49,3 +51,16 @@ class GetOption(LoginRequiredMixin, TemplateView):
             context = {}
 
         return context
+    
+class AddOption(View):
+    def post(self, *args, **kwargs):
+        pk = kwargs["pk"]
+        recipe = Recipe.objects.get(pk=pk)
+        option, created = Option.objects.update_or_create(
+            defaults={
+                "user": self.request.user,
+                "recipe": recipe,
+            },
+        )
+
+        return HttpResponseRedirect(reverse("favorites"))

@@ -23,7 +23,7 @@
                     <div class="favorite-info text-center card-body">
                         <h2 class="card-title">{{ recipe.title }}</h2>
                         <p class="card-text">{{ recipe.description }}</p>
-                        
+
                         <!-- not working yet -->
                         <form action="{% url 'favorites' %}" method="POST">
                             {% csrf_token %}
