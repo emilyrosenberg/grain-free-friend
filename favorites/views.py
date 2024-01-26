@@ -1,4 +1,5 @@
 from django.views.generic import TemplateView, View
+from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponseRedirect
 from django.urls import reverse
@@ -64,6 +65,8 @@ class AddOption(View):
             user=request.user,
             recipe=recipe,
         )
+
+        messages.success(self.request, "Your recipe has been added to favorites!")
 
         # from https://docs.djangoproject.com/en/5.0/ref/models/instances/
         if not created:
