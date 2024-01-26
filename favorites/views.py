@@ -7,6 +7,8 @@ from .models import Option
 from recipes.models import Recipe
 import random
 
+# Views inspired by and modified from https://www.youtube.com/playlist?list=PLXuTq6OsqZjYSa-lrjd5wMGl23zpnhvln
+
 
 class Favorites(TemplateView):
     """View user's favorites"""
@@ -52,15 +54,17 @@ class GetOption(LoginRequiredMixin, TemplateView):
 
         return context
     
+    
 class AddOption(View):
-    def post(self, *args, **kwargs):
-        pk = kwargs["pk"]
+    def post(self, request, pk):
         recipe = Recipe.objects.get(pk=pk)
-        option, created = Option.objects.update_or_create(
-            defaults={
-                "user": self.request.user,
-                "recipe": recipe,
-            },
+        option, created = Option.objects.get_or_create(
+            user=request.user,
+            recipe=recipe,
         )
+
+        # from https://docs.djangoproject.com/en/5.0/ref/models/instances/
+        if not created:
+            option.save()
 
         return HttpResponseRedirect(reverse("favorites"))

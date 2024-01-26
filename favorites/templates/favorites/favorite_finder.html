@@ -25,7 +25,7 @@
                         <p class="card-text">{{ recipe.description }}</p>
 
                         <!-- not working yet -->
-                        <form action="{% url 'favorites' %}" method="POST">
+                        <form action="{% url 'add_option' recipe.pk %}" method="POST">
                             {% csrf_token %}
                             <div class="text-center">
                                 <button class="btn" type="submit">Add Recipe</button>
