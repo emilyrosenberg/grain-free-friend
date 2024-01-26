@@ -44,11 +44,11 @@ class GetOption(LoginRequiredMixin, TemplateView):
                 recipes = []
             else:
                 recipes = Recipe.objects.filter()
+# Returns a random recipe or if there are no recipes in the database, returns empty
         if len(recipes) > 0:
             recipe = random.choice(recipes)
             context = {"recipe": recipe}
-        # These are the same because I'm filtering differently than the tutorial, may cause a problem?
         else:
-            recipe = random.choice(recipes)
-            context = {"recipe": recipe}
+            context = {}
+            
         return context
