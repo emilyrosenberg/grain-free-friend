@@ -40,13 +40,24 @@ It has full CRUD functionality; a user can
 #### Add Recipe
 #### Update Recipe
 #### Delete Recipe
+#### Favorites
+#### Favorite Finder
 #### About
+The About page is all about Grain Free Friend's community and mission.
 #### Contact
+This is a future implementation. It will include a contact form.
 #### 403 & 404
+These pages exist and will become visible in a future implementation.
+
 ### Features
 #### Header and Navigation
+The header includes the GFF logo, navigation items, and a search bar.
+- The logo is described [below](#logo).
+- The navbar always contains Home, Recipes, and About. If the user is logged out or has no account, they can see options to Register and Login. If the user is logged in, they can see their Favorites, and an option to Logout.
+<!-- Add items -->
+- The search bar has an input field and a button. User can search by keyword and results will be returned if they keyword is in any recipe's title, description, tags, ingredients, and instructions.
 #### Footer
-- Social media icons were created with [UXWing](https://uxwing.com/).
+The footer contains social media links. Social media icons were created with [UXWing](https://uxwing.com/).
 #### Account
 #### Create an Account
 #### Login
@@ -76,14 +87,14 @@ The favicon was created from the logo image using the [favico.io favicon convert
 ![Favicon](static/images/readme-images/favicon-image.png)
 #### Images
 The recipe images are either my personal photos or from [Unsplash](https://unsplash.com/).
-<!-- Add content about images -->
 <br>
-
 They are stored in and accessed through [Cloudinary](https://cloudinary.com).
 
 #### Background
+The placeholder background is a light neutral white color.
 #### Content
-
+- The content and branding of the site are designed to provide support and ideas for users who are interested in unconventional baking. The tone is warm and open, letting users know they are welcome and encouraging them to participate in the community.
+- All recipe content is posted by users. The content that I have posted here is from my own grain-free recipe development process.
 ## Testing
 #### Lighthouse
 ### Code Validation
@@ -106,6 +117,16 @@ I wanted to add something like tags to show the attributes of each recipe. It se
 The static files wouldn't load, so I did some research and found [from Stack Overflow](https://stackoverflow.com/questions/28961177/heroku-static-files-not-loading-django) that I needed to install whitenoise. I installed whitenoise per [these instructions](https://devmaesters.com/blog/34). After I updated my requirements.txt, the files loaded.
 
 ## Future Implementations
+There are many features that will improve the user's experience of the current web app. 
+- User can delete favorites. The CRUD functionality of the favorites app will be updated to include deleting favorites as well as adding them.
+- User can add and delete favorites from the recipe detail page.
+- User can comment on recipes. The comments will have CRUD functionality.
+- User can filter a search by tag. This will also involve creating tags, instead of the placeholder fix in the current version.
+- Require admin approval for user-submitted recipes and comments. the user can submit a recipe, and when it is approved, it will be published.
+- Add contact form. As a placeholder, the Contact button on the About page currently links to Facebook's home page.
+- Make custom 403 and 404 pages visible.
+- Custom feedback messages.
+- Update styling and visual appeal.
 
 ## Languages, Libraries, and Software
 ### Languages
@@ -130,6 +151,7 @@ The static files wouldn't load, so I did some research and found [from Stack Ove
 - Bootstrap5
 - Django
 - Github
+- Github projects [Kanban board here](https://github.com/users/emilyrosenberg/projects/4/views/1)
 - Cloudinary
 - PostgreSQL (ElephantSQL)
 - Heroku
