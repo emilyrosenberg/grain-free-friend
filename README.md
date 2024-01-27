@@ -1,15 +1,13 @@
 # Grain Free Friend
 Your baking buddy for alternative breads and more
 
-![Mockup on different devices, created with Techsini.]()
+![Mockup on different devices, created with Techsini.](static/images/readme-images/mockup.png)
 
-Grain Free Friend is a recipe sharing web app that allows users to ...
-<!-- Add content here -->
-It has full CRUD functionality; a user can
-- Create a new recipe
-- Read posted recipes
-- Update recipes they have posted
-- Delete recipes they have posted
+Grain Free Friend is a recipe sharing web app that allows users to join a worldwide community for support and solutions. It was started in 2024 to share the secrets of baking without grain or sugar. It's a way to find the basic recipes that work every day, as well as fancy treats for special occasions.
+<br>
+This website is responsive on all devices, and designed to be appealing and intuitive. Users can search for and view recipes, and have the ability to create an account in order to access full CRUD functionality.
+
+<hr>
 
 ## Table of Contents
 - [Intro](#grain-free-friend)
@@ -33,13 +31,39 @@ It has full CRUD functionality; a user can
 - A person with new grain-free dietary restrictions who wants to find tasty substitute recipes efficiently.
 
 ### User Stories
+
 ### Structure
 #### Landing Page
+
+**Recipe Viewing**
+
 #### All Recipes
 #### Recipe Detail
+
+**Account Creation**
+The user can create an account with a username and password. This fuctionality comes from allauth. They can then log in, log out, create, update, and delete recipes, plus add and view favorites.
+#### Create an Account
+#### Login
+#### Logout
+
+**Recipe CRUD** <br>
+A logged-in user can:
+
+- Create a new recipe
+- Read posted recipes
+- Update recipes they have posted
+- Delete recipes they have posted
+Feedback messages accompany these user actions.
+
 #### Add Recipe
 #### Update Recipe
 #### Delete Recipe
+
+**Favorites** <br>
+A logged-in user can:
+- Save a recipe to their favorites
+A feedback message accompanies this user action. For future implementations, please read more [here](#future-implementations).
+
 #### Favorites
 #### Favorite Finder
 #### About
@@ -54,14 +78,9 @@ These pages exist and will become visible in a future implementation.
 The header includes the GFF logo, navigation items, and a search bar.
 - The logo is described [below](#logo).
 - The navbar always contains Home, Recipes, and About. If the user is logged out or has no account, they can see options to Register and Login. If the user is logged in, they can see their Favorites, and an option to Logout.
-<!-- Add items -->
 - The search bar has an input field and a button. User can search by keyword and results will be returned if they keyword is in any recipe's title, description, tags, ingredients, and instructions.
 #### Footer
 The footer contains social media links. Social media icons were created with [UXWing](https://uxwing.com/).
-#### Account
-#### Create an Account
-#### Login
-#### Logout
 
 ### Surface
 #### Colors
@@ -88,14 +107,14 @@ The favicon was created from the logo image using the [favico.io favicon convert
 #### Images
 The recipe images are either my personal photos or from [Unsplash](https://unsplash.com/).
 <br>
+
 They are stored in and accessed through [Cloudinary](https://cloudinary.com).
 
 #### Background
 The placeholder background is a light neutral white color.
-#### Content
-- The content and branding of the site are designed to provide support and ideas for users who are interested in unconventional baking. The tone is warm and open, letting users know they are welcome and encouraging them to participate in the community.
-- All recipe content is posted by users. The content that I have posted here is from my own grain-free recipe development process.
+
 ## Testing
+Unfortunately testing is a future implementation.
 #### Lighthouse
 ### Code Validation
 #### HTML
@@ -127,6 +146,7 @@ There are many features that will improve the user's experience of the current w
 - Make custom 403 and 404 pages visible.
 - Custom feedback messages.
 - Update styling and visual appeal.
+- Content. My grain-free recipe development project is ongoing.
 
 ## Languages, Libraries, and Software
 ### Languages
@@ -135,7 +155,7 @@ There are many features that will improve the user's experience of the current w
 - Javascript
 - Python
 ### Modules and Packages
-- black (code formatter)
+- black (python formatter)
 - cloudinary (image hosting)
 - crispy-bootstrap5
 - dj-database-url
@@ -166,82 +186,28 @@ There are many features that will improve the user's experience of the current w
 - W3C - CSS
 
 ## Deployment
+Unfortunately deployment documentation is a future implementation.
 ### Heroku
 - Create accounts in Heroku and ElephantSQL
-- 
 ### Github
 
 ## Credits
 ### Content
+- The content and branding of the site are designed to provide support and ideas for users who are interested in unconventional baking. The tone is warm and open, letting users know they are welcome and encouraging them to participate in the community.
+- All recipe content is posted by users. The content that I have posted here is from my own grain-free recipe development project.
 ### Media
+- The recipe images are either my personal photos or from [Unsplash](https://unsplash.com/).
 ### Thank you
-- This project was developed using the [Django Recipe Sharing tutorial by Dee Mc](https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=1). I am indebted to her for the basic styling of the header, footer, and forms, the CRUD functionality of the recipes, class-based views, and querying.
+- This project was developed using the [Django Recipe Sharing tutorial by Dee Mc](https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=1). I am indebted to her for inspiation on the entire project, including the basic styling of the header, footer, and forms, the CRUD functionality of the recipes and favorites, class-based views, and querying.
 - The project was also inspired by Code Institute's Django Blog Walkthrough. I used this to help create the success alerts.
-- Inspiration for this readme came from [gStarhigh](https://github.com/gStarhigh/pro4).
+- Inspiration for this readme came from [gStarhigh](https://github.com/gStarhigh/pro4). When I finish it I hope I can come anywhere close to this standard.
+- Thank you to the Code Institute tutors for their enthusiastic support with problem solving and squashing bugs.
+- Thank you to my Code Institute mentor Adegbenga Adeye.
+- Thanks to my Code Institute cohort facilitator Kristyna, who is the best at pep talks. Also thanks for suggesting the recipe sharing tutorial by Dee Mc!
+- And last but not least, thank you to my amazing student pals who have banded together to provide positivity and solutions in the tough times, and celebrations in the good ones.
 
-<!-- ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
-### Existing Features
-
-- __Navigation Bar__
-
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
-
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
-
-- __The landing page image__
-
-  - The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to. 
-  - This section introduces the user to Love Running with an eye catching animation to grab their attention
-
-![Landing Page](https://github.com/lucyrush/readme-template/blob/master/media/love_running_landing.png)
-
-- __Club Ethos Section__
-
-  - The club ethos section will allow the user to see the benefits of joining the Love Running meetups, as well as the benefits of running overall. 
-  - This user will see the value of signing up for the Love Running meetups. This should encourage the user to consider running as their form of exercise. 
-
-![Club Ethos](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
-
-- __Meetup Times section__
-
-  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
-  - This section will be updated as these times change to keep the user up to date. 
-
-![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
-
-- __The Footer__ 
-
-  - The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the user as it encourages them to keep connected via social media
-
-![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
-
-- __Gallery__
-
-  - The gallery will provide the user with supporting images to see what the meet ups look like. 
-  - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together. 
-
-![Gallery](https://github.com/lucyrush/readme-template/blob/master/media/love_running_gallery.png)
-
-- __The Sign Up Page__
-
-  - This page will allow the user to get signed up to Love Running to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address. 
-
-![Sign Up](https://github.com/lucyrush/readme-template/blob/master/media/love_running_signup.png)
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
-### Features Left to Implement
-
-- Another feature idea
-
-## Testing 
+<!-- ## Testing 
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
