@@ -1,3 +1,5 @@
+# The favorites app was inspired by the meal_planner app in the Django Recipe Sharing tutorial by Dee Mc. This functionality is based on the tutorial.
+
 from django.views.generic import TemplateView, View
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -7,8 +9,6 @@ from django.db.models import Q
 from .models import Option
 from recipes.models import Recipe
 import random
-
-# Views inspired by and modified from https://www.youtube.com/playlist?list=PLXuTq6OsqZjYSa-lrjd5wMGl23zpnhvln
 
 
 class Favorites(TemplateView):

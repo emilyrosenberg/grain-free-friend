@@ -1,3 +1,5 @@
+# The favorites app was inspired by the meal_planner app in the Django Recipe Sharing tutorial by Dee Mc. This functionality is based on the tutorial.
+
 from django.urls import path
 from .views import Favorites, GetOption, AddOption
 

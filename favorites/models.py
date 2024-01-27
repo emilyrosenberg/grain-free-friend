@@ -1,3 +1,5 @@
+# The favorites app was inspired by the meal_planner app in the Django Recipe Sharing tutorial by Dee Mc. This functionality is based on the tutorial.
+
 from django.db import models
 from django.contrib.auth.models import User
 from recipes.models import Recipe

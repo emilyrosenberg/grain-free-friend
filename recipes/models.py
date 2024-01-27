@@ -1,3 +1,5 @@
+""" The recipes app was inspired by the app of the same name in the Django Recipe Sharing tutorial by Dee Mc. This functionality is based on the tutorial. """
+
 from django.db import models
 from django.contrib.auth.models import User
 

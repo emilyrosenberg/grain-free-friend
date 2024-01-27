@@ -1,11 +1,4 @@
-"""
-WSGI config for main project.
-
-It exposes the WSGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/
-"""
+""" This web app was inspired by the Django Recipe Sharing tutorial by Dee Mc. The functionality here is based on the tutorial. """
 
 import os
 

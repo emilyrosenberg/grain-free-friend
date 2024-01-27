@@ -1,3 +1,5 @@
+""" The recipes app was inspired by the app of the same name in the Django Recipe Sharing tutorial by Dee Mc. These forms are based on the tutorial. """
+
 from django import forms
 from djrichtextfield.widgets import RichTextWidget
 from .models import Recipe

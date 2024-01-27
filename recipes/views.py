@@ -1,3 +1,5 @@
+""" The recipes app was inspired by the app of the same name in the Django Recipe Sharing tutorial by Dee Mc. This functionality is based on the tutorial. """
+
 from django.contrib import messages
 
 from django.views.generic import (
@@ -64,6 +66,7 @@ class AddRecipe(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         # Update form's instance of the user and set it to the person who is creating the recipe (the logged in user)
         form.instance.user = self.request.user
+        # Info about custom messages here: https://docs.djangoproject.com/en/5.0/ref/contrib/messages/
         messages.success(self.request, "Your recipe has been added!")
         return super(AddRecipe, self).form_valid(form)
 

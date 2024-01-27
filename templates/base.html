@@ -1,3 +1,5 @@
+<!-- This web app was inspired by the Django Recipe Sharing tutorial by Dee Mc. The functionality here is based on the tutorial. -->
+
 {% load static %}
 
 <!DOCTYPE html>
@@ -44,7 +46,7 @@
     {% include 'includes/footer.html' %}
     
     {% block extra_js %}
-    <!-- Automatic timeout for alerts, from Django blog walkthrough -->
+    <!-- Automatic timeout for alerts, from CI Django blog walkthrough -->
     <script>
         setTimeout(function () {
             let messages = document.getElementById('msg');

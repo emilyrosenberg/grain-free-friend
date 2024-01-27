@@ -1,3 +1,5 @@
+""" The home app was inspired by the app of the same name in the Django Recipe Sharing tutorial by Dee Mc. The functionality here is based on the tutorial. """
+
 from django.views.generic import ListView
 from recipes.models import Recipe
 
