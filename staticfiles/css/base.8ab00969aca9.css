@@ -1,0 +1,265 @@
+/* This web app was inspired by the app of the same name in the Django Recipe Sharing tutorial by Dee Mc. The functionality here is based on the tutorial. */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    /* Fonts */
+    --title: 'Montserrat', sans-serif;
+    --main-font: 'Raleway', sans-serif;
+
+    /* Colors */
+    --blue: #b4e1e6;
+    --cream: #ffe9b8;
+    --yellow: #fec91d;
+    --peach: #f9ac82;
+    --red: #f1442e;
+    --green: #a7ca55;
+    --dark-green: #38574f;
+    --off-black: #100c08;
+    --off-white: #fffaf0;
+
+    /* Utils */
+
+    --small-box-shadow: 1px -1px 7px 0 #100c08;
+    /* Change border color so it shows up */
+    --border: 2px solid #f1442e;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+    color: var(--off-black)
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title);
+}
+
+h1 {
+    color: var(--red);
+}
+
+main {
+    flex: 1 0 auto;
+    background-color: var(--off-white);
+}
+
+.btn {
+    border: var(--border);
+    background-color: var(--peach);
+    color: var(--off-black);
+    font-weight: 600;
+    width: 25%;
+    min-width: 100px;
+}
+
+.btn:hover {
+    border: var(--border);
+    background-color: var(--red);
+    color: var(--cream);
+}
+
+.horiz-line {
+    color: var(--off-black);
+}
+/* Header */
+
+.navbar {
+    background-color: var(--cream);
+    border-bottom: var(--border);
+    box-shadow: var(--small-box-shadow);
+}
+
+.custom-toggler {
+    border-color: var(--red);
+    border-width: 2px;
+}
+
+a.nav-link {
+    color: var(--off-black);
+}
+
+a.nav-link:hover {
+    color: var(--red);
+}
+
+img.logo {
+    width: 12rem;
+}
+
+a.nav-link.active {
+    font-weight: 600;
+}
+
+/* Form */
+
+/* Initial styles based on the tutorial */
+.form {
+    width: 100%;
+    margin: 3% auto;
+    box-shadow: var(--small-box-shadow);
+    border-radius: 5px;
+    background-color: var(--cream);
+}
+
+/* Recipes */
+
+.card {
+    height: 90%;
+    margin-top: 1rem;
+    box-shadow: var(--small-box-shadow);
+}
+
+.recipes {
+    text-decoration: none;
+    color: var(--off-black);
+}
+
+.recipes:hover {
+    cursor: pointer;
+}
+
+.recipe-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recipe-container {
+    display: flex;
+    flex-direction: column;
+    border: var(--border);
+}
+
+.ingredients, .instructions, .recipe-detail {
+    width: 100%;
+}
+
+.recipe-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-pic {
+    width: 100%;
+    height: auto;
+    box-shadow: var(--small-box-shadow);
+}
+
+.recipe-cont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+a.img-container {
+    position: relative;
+    text-align: center;
+    color: var(--peach);
+    margin: 2%;
+    overflow: hidden;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    box-shadow: var(--small-box-shadow);
+}
+
+a.img-container:hover {
+    color: var(--red)
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.centered {
+    width: 100%;
+    background-color: var(--off-black);
+    opacity: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.recipe-cont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Footer */
+
+footer {
+    flex-shrink: 0;
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: var(--border);
+}
+
+.social-icon {
+    height: 2rem;
+    margin: 1rem;
+}
+
+
+/* Media queries */
+
+/* Styles for recipe detail */
+@media screen and (min-width: 62.5em) {
+    .main-title {
+        width: 50%;
+    }
+    
+    .recipe-info {
+        flex-direction: row;
+        border: 1px solid var(--black);
+    }
+
+    .recipe-img {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .recipe-detail {
+        width: 60%;
+        padding: 2rem;
+    }
+
+    .recipe-container {
+        flex-direction: row;
+    }
+
+    .ingredients {
+        width: 33.33%;
+    }
+
+    .instructions {
+        width: 66.66%;
+    }
+}
+
+/* Makes forms narrower */
+@media screen and (min-width:40em){
+    .form {
+        width: 50%;
+    }
+
+    .recipe-cont {
+        flex-direction: row;
+    }
+
+    .img-container {
+        flex-direction: row;
+        width: 29%;
+    }
+}
