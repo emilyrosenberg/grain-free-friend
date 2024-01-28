@@ -14,29 +14,29 @@
             "is_active": true,
             "date_joined": "2024-01-15T18:44:16.819Z",
             "groups": [],
-            "user_permissions": [],
-        },
+            "user_permissions": []
+        }
     },
     {
         "model": "sessions.session",
         "pk": "mulqlkcsoulwlandknexc65n7hqab5gl",
         "fields": {
             "session_data": ".eJxlkEtuwzAMRO_CtWFItqyPl93nBEVh0BIVu42lQJLRBkHu3qjNJu2O4DwOObwCWhv3UCbcy0KhrBbLGsO0UVmiyzC-XuG3hhHOmPNnTA4awAIjV2wYNOuZanuppZAN7JlSwI3uMG3r6ZJipjBTOsLtrYGfJVNlprX6cXjqzWg_KFTBvWM4xtbGUNI6txVpH2puD9HR6eXBPhksmJf7tPDdjFwYo7wRahg8Q40c2cwEk53EwXjnpLQdR6u98b33mhOarlfCW6Qa7_9XyE1_QyvT6f5-Qaac69Po67ymC4zs9g3whnIs:1rQRLn:pRMMR30h3EWi8z8-LmLUiptJAj88upHGkGcfocaxR50",
-            "expire_date": "2024-02-01T12:18:27.380Z",
-        },
+            "expire_date": "2024-02-01T12:18:27.380Z"
+        }
     },
     {
         "model": "sessions.session",
         "pk": "ybsphpxxx938vx5wmvl5v44z9phpudnv",
         "fields": {
             "session_data": ".eJxVjLsOAiEQAP-F2hDX5bFa2vsNBNhFTg2XHHeV8d8NyRXazkzmrULc1hq2LkuYWF0UqMMvSzE_pQ3Bj9jus85zW5cp6ZHo3XZ9m1le1739G9TY69j6k8foyFiDxMUKAznwnFIBa50lOSMwoUmQkclke2R0EnMx7AlYfb7CLDeB:1rRc1Z:gGFk15wxec2depUt8PnK2rjEfK9HXSltUBhHZHHyg-Y",
-            "expire_date": "2024-02-04T17:54:25.741Z",
-        },
+            "expire_date": "2024-02-04T17:54:25.741Z"
+        }
     },
     {
         "model": "sites.site",
         "pk": 1,
-        "fields": {"domain": "example.com", "name": "example.com"},
+        "fields": {"domain": "example.com", "name": "example.com"}
     },
     {
         "model": "recipes.recipe",
@@ -51,8 +51,8 @@
             "image_alt": "A loaf of bread",
             "level": "moderate",
             "method": "oven",
-            "posted_date": "2024-01-19T13:57:06.623Z",
-        },
+            "posted_date": "2024-01-19T13:57:06.623Z"
+        }
     },
     {
         "model": "recipes.recipe",
@@ -67,8 +67,8 @@
             "image_alt": "A dish of baked fruit cobbler",
             "level": "easy",
             "method": "oven",
-            "posted_date": "2024-01-20T10:39:48.078Z",
-        },
+            "posted_date": "2024-01-20T10:39:48.078Z"
+        }
     },
     {
         "model": "recipes.recipe",
@@ -83,8 +83,8 @@
             "image_alt": "A plate of blinis topped with caviar and salmon",
             "level": "fancy",
             "method": "stovetop",
-            "posted_date": "2024-01-20T10:47:17.656Z",
-        },
+            "posted_date": "2024-01-20T10:47:17.656Z"
+        }
     },
     {
         "model": "recipes.recipe",
@@ -99,8 +99,8 @@
             "image_alt": "Close-up of nut granola",
             "level": "easy",
             "method": "oven",
-            "posted_date": "2024-01-20T10:59:45.490Z",
-        },
+            "posted_date": "2024-01-20T10:59:45.490Z"
+        }
     },
     {
         "model": "recipes.recipe",
@@ -115,8 +115,8 @@
             "image_alt": "Bundt cake cooling on a rack",
             "level": "moderate",
             "method": "oven",
-            "posted_date": "2024-01-20T12:04:59.106Z",
-        },
+            "posted_date": "2024-01-20T12:04:59.106Z"
+        }
     },
     {
         "model": "recipes.recipe",
@@ -131,8 +131,8 @@
             "image_alt": "A plate of blintzes",
             "level": "fancy",
             "method": "stovetop",
-            "posted_date": "2024-01-20T12:28:02.545Z",
-        },
+            "posted_date": "2024-01-20T12:28:02.545Z"
+        }
     },
     {
         "model": "recipes.recipe",
@@ -147,8 +147,8 @@
             "image_alt": "Bagels cooling on parchment paper",
             "level": "fancy",
             "method": "oven",
-            "posted_date": "2024-01-20T12:36:40.989Z",
-        },
+            "posted_date": "2024-01-20T12:36:40.989Z"
+        }
     },
     {
         "model": "recipes.recipe",
@@ -163,7 +163,7 @@
             "image_alt": "A baked sweet potato knish",
             "level": "fancy",
             "method": "oven",
-            "posted_date": "2024-01-21T15:00:08.217Z",
-        },
-    },
+            "posted_date": "2024-01-21T15:00:08.217Z"
+        }
+    }
 ]
