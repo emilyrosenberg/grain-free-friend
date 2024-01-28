@@ -47,14 +47,14 @@ These stories guided the development of features. To implement Agile methodology
 #### Landing Page
 The landing page welcomes the user to GFF. It has information about the site and the GFF project, and shows three recently-added recipes. The header has a navbar and search bar, and there is a footer with social media links.
 
-**Recipe Viewing:**
+**Recipe Viewing:** <br>
 #### All Recipes
 This page shows all recipes on the site.
 #### Recipe Detail
-This page shows all the information about a single recipe, including title, decription, level, method, and up to 3 tags, as well as a photo and the ingredients and instructions.
+This page shows all the information about a single recipe, including title, description, level, method, and up to 3 tags, as well as a photo and the ingredients and instructions.
 
-**Account Creation:**
-The user can create an account with a username and password. This fuctionality comes from allauth. They can then log in, log out, create, update, and delete recipes, plus add and view favorites.
+**Account Creation:** <br>
+The user can create an account with a username and password. This functionality comes from allauth. They can then log in, log out, create, update, and delete recipes, plus add and view favorites.
 #### Create an Account
 This is a simple form from allauth to create a username and password, styled with crispy forms.
 #### Login
@@ -70,7 +70,7 @@ A logged-in user can:
 - Update recipes they have posted
 - Delete recipes they have posted
 
-Feedback messages accompany these user actions.
+Feedback messages follow these user actions.
 
 #### Add Recipe
 This form was styled with crispy forms and allows the user to add a recipe to GFF. It includes input fields for Title, Description, Ingredients, Instructions, Level, Image, Image Description, Method, and at least one and up to three tags.
@@ -103,7 +103,7 @@ These pages exist and will become visible in a future implementation.
 The header includes the GFF logo, navigation items, and a search bar.
 - The logo is described [below](#logo).
 - The navbar always contains Home, Recipes, and About. If the user is logged out or has no account, they can see options to Register and Login. If the user is logged in, they can see their Favorites, Add Recipe, and an option to Logout.
-- The search bar has an input field and a button. User can search by keyword and results will be returned if they keyword is in any recipe's title, description, tags, ingredients, and instructions.
+- The search bar has an input field and a button. User can search by keyword and results will be returned if the keyword is in any recipe's title, description, tags, ingredients, and instructions.
 #### Footer
 The footer contains social media links. Social media icons were created with [UXWing](https://uxwing.com/).
 
@@ -138,7 +138,6 @@ The favicon was created from the logo image using the [favico.io favicon convert
 #### Images
 The recipe images are either my personal photos or from [Unsplash](https://unsplash.com/).
 <br>
-
 They are stored in and accessed through [Cloudinary](https://cloudinary.com).
 
 #### Background
@@ -162,7 +161,7 @@ The admin panel provides all of this functionality.
 - _Search by keyword: As a Site User I can search by keyword so that I can find recipes with specific ingredients, methods, etc._<br>
 The search bar in the header allows the user to search for recipes by keyword.
 - _Open a recipe: As a Site User I can click on a recipe so that I can read the full text._<br>
-The recipe detail page shows each recipe's title, decription, level, method, and up to 3 tags, as well as a photo and the ingredients and instructions.
+The recipe detail page shows each recipe's title, description, level, method, and up to 3 tags, as well as a photo and the ingredients and instructions.
 - _View recipe list: As a Site User I can view a list of recipes so that I can select one to read._<br>
 The recipes page shows all recipes on the site.
 - _Find favorites: As a Site User I can use keywords to search for new favorites so that I can discover new recipes that suit me._<br>
@@ -239,11 +238,58 @@ There are many features that will improve the user's experience of the current w
 - W3C - HTML
 - W3C - CSS
 
+## Creating the App
+### Creating the Repo and Local Workspace
+This app was created with Gitpod and developed in VS Code.
+1. Go to the Code Institute Gitpod Full Template [Template](https://github.com/Code-Institute-Org/gitpod-full-template)
+2. Click on Use This Template
+3. Create a new repository with the template, and copy the url
+Open VS Code and click Clone Git Repository and enter the url
+4. Save the repository locally
+5. Open a new terminal
+6. Install Django and gunicorn: `pip3 install django gunicorn`
+7. Install supporting database libraries dj_database_url and psycopg2 library: `pip3 install dj_database_url psycopg2`
+8. Create file for requirements: in the terminal window type `pip freeze --local > requirements.txt`
+9. Create project: in the terminal window type `django-admin startproject <your_project_name>`
+10. Create app: in the terminal window type `python3 manage.py startapp <your_app_name>`
+11. Add app to the list of installed apps in settings.py file: your_app_name
+12. Migrate changes: in the terminal window type python3 manage.py migrate
+13. Run the server to test if the app is installed, in the terminal window type `python3 manage.py runserver`
+14. If the app has been installed correctly the window will display The install worked successfully! Congratulations!<br>
+Additional instructions:
+15. Create an account in ElephantSQL as a PostgreSQL database and connect in Heroku config vars and env.py
+16. Create an account in Cloudinary for image storage and connect in Heroku config vars and settings.py
+
+_Thanks to [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blob/main/README.md?plain=1) for the basis for these app creation instructions._
+
 ## Deployment
-The web app was deployed with Heroku. It is live at this [link](https://grain-free-friend-d9004ed6c6b5.herokuapp.com/). <br> Unfortunately deployment documentation is a future implementation.
-### Heroku
-<!-- - Create accounts in Heroku and ElephantSQL -->
-### Github
+The web app was deployed with Heroku. It is live at this [link](https://grain-free-friend-d9004ed6c6b5.herokuapp.com/). <br>
+
+### Heroku deployment
+This site was deployed by completing the following steps:
+
+1. Log in to [Heroku](https://id.heroku.com) or create an account
+2. On the main page click the button labeled New in the top right corner and from the drop-down menu select Create New App
+3. You must enter a unique app name
+4. Select your region
+5. Click on the Create App button
+6. Click Resources and select Heroku Postgres database
+7. Open the Settings tab and scroll down to Config Vars
+8. Click Reveal Config Vars and add a new record with `SECRET_KEY = <key>`
+9. Add a new record `CLOUDINARY_URL = <url>`
+10. Add a new record `DISABLE_COLLECTSTATIC = 1`
+11. Next, scroll down to the Buildpack section click Add Buildpack. Select Python and click Save Changes
+12. Open the Deploy tab
+13. Select Github as the deployment method
+14. Confirm you want to connect to GitHub
+15. Search for the repository name and click the connect button
+16. Scroll to the bottom of the deploy page and select the preferred deployment type. Enable Automatic Deploys for automatic deployment when you push updates to Github
+17. Create a Procfile `web: gunicorn <your_project_name>.wsgi`
+For final deployment:
+18. When development is complete change the debug setting to: `DEBUG = False` in settings.py
+19. In Heroku settings, delete the config vars for `DISABLE_COLLECTSTATIC = 1`, and `DEBUG = FALSE`
+
+_Thanks to [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blob/main/README.md?plain=1) for the basis for these deployment instructions._
 
 ## Credits
 ### Content
@@ -256,67 +302,8 @@ The web app was deployed with Heroku. It is live at this [link](https://grain-fr
 - This project was developed using the [Django Recipe Sharing tutorial by Dee Mc](https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=1). I am indebted to her for inspiration on the entire project, including the Django logic, the basic styling of the header, footer, and forms, the CRUD functionality of the recipes and favorites, class-based views, and querying.
 - The project was also inspired by Code Institute's Django Blog Walkthrough. I used this to help create the success alerts.
 - Inspiration for this readme came from [gStarhigh](https://github.com/gStarhigh/pro4). When I finish it I hope I can come anywhere close to this standard.
+- An outline of the deployment instructions came from [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blob/main/README.md#frameworks---libraries---programs-used).
 - Thank you to the Code Institute tutors for their enthusiastic support with problem solving and squashing bugs.
 - Thank you to my Code Institute mentor Adegbenga Adeye.
 - Thanks to my Code Institute cohort facilitator Kristyna, who is the best at pep talks. Also thanks for suggesting the recipe sharing tutorial by Dee Mc!
 - And last but not least, thank you to my amazing student pals who have banded together to provide positivity and solutions in the tough times, and celebrations in the good ones.
-
-<!-- ## Testing 
-
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
-
-### Validator Testing 
-
-- HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
-- CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
-
-## Deployment
-
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
-
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
-
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
-
-
-
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
-
-
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
-
-## Other General Project Advice
-
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
-
-- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
-  - Make sure to keep the messages in the imperative mood 
-
-- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept. 
-
-- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General) -->
