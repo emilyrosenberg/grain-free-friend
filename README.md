@@ -187,6 +187,12 @@ I created this site without a profile page, to simplify development. But when I 
   - Add the recipe pk to the form action.
   - Add pk to the parameters for post.
 Error messages were still coming up. I found this [solution](https://docs.djangoproject.com/en/5.0/ref/models/instances/) and experimented with syntax, and was able to fix the bug and successfully add a recipe to favorites.
+- User registrations error
+ - On registering as a new user, an error message appeared: "ConnectionRefusedError at /accounts/signup/"
+ - I checked that everything looked ok on Heroku
+ - I searched the PP4 Slack channel and found [this advice](https://code-institute-room.slack.com/archives/C7EJUQT2N/p1649343681449299?thread_ts=1649342508.908129&cid=C7EJUQT2N) to use this line of code in settings.py
+ ![Email authentification setting](staticfiles/images/readme-images/bug-fix.png)
+ - I had this in my code already but there was a typo.
 
 ## Future Implementations
 There are many features that will improve the user's experience of the current web app. 
