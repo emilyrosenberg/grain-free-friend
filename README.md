@@ -17,6 +17,7 @@ This website is responsive on all devices, and designed to be appealing and intu
   - [User Stories](#user-stories)
   - [Structure](#structure)
   - [Features](#features)
+  - [Design](#design)
   - [Surface](#surface)
 - [Testing](#testing)
 - [Future Implementations](#future-implementations)
@@ -107,6 +108,15 @@ The header includes the GFF logo, navigation items, and a search bar.
 #### Footer
 The footer contains social media links. Social media icons were created with [UXWing](https://uxwing.com/).
 
+### Design
+
+<!-- From the assessment:
+1.13	Document the UX design work undertaken for this project, including any wireframes, mockups, diagrams, etc.,created as part of the design process and its reasoning. Include diagrams created as part of the design process and demonstrate that these have been followed through to implementation
+No.
+The design process and its reasoning are documented but could be improved. Wireframes, mockups and diagrams created as part of the design process are missing from the README.
+
+Along with the design rationale, extensive wireframes, mockups and diagrams created as part of the design process should be included in the README.-->
+
 ### Surface
 #### Colors
 The color palette is from [Lilybug Design](https://www.lilybugdesign.co.nz/colour-wall). I saw one of these designs used in a [PP4 project by Roshna Vakkee](https://github.com/RoshnaVakkeel/Little_Learners_Lab_Logs?tab=readme-ov-file), and found a beautiful one for my project. This palette is fresh and lively, as well as warm. It supports the Grain Free Friend branding: accessible, fun, warm, supportive. <br>
@@ -145,6 +155,26 @@ The background is the lightest color in the palette, so that the content is clea
 
 ## Testing
 Unfortunately technical testing is a future implementation.
+
+<!-- From the assessment:
+4.3	Document all implemented testing in the README. 
+No. 
+Testing write-ups are present and cover most automated and/or manual tests, but scope exists for more detail
+
+Consider adding seven main sections with screenshots to the testing: 
+* Manual testing of each section of the site (such as buttons, links etc) 
+* Testing site responsiveness using a site like https://responsivedesignchecker.com/ 
+* Code validation (CSS/HTML/JS using online tools like https://jigsaw.w3.org/css-validator/ and JSHint) * Testing of all user stories 
+* Automated testing details 
+* Documentation of any bugs encountered and their resolution steps 
+* Documentation of any open bugs 
+
+Ideally, manual test cases should focus on each individual section of every page on the website. Each test case should be specific, objective, step-wise replicable. Instead of adding a general overview saying that everything works fine, consider documenting tests on each element on the page (ie. buttons, input boxes, navigation links etc) by testing them in their happy flow and also the bad/exception flow, mentioning the expected and the observed results, and drawing a parallel between them. This can be documented in a tabular format. Consider using the following format for manual test cases: 
+* Expected - Feature is expected to do X when the user does Y 
+* Testing - Tested the feature by doing Y 
+* Result - The feature did not respond due to A,B,C or Result - The feature acted as normally and it did Y 
+* Fix - I did Z to the code because something was missing. -->
+
 #### Lighthouse
 ### Code Validation
 #### HTML
@@ -193,6 +223,7 @@ Error messages were still coming up. I found this [solution](https://docs.django
  - I searched the PP4 Slack channel and found [this advice](https://code-institute-room.slack.com/archives/C7EJUQT2N/p1649343681449299?thread_ts=1649342508.908129&cid=C7EJUQT2N) to use this line of code in settings.py
  ![Email authentification setting](staticfiles/images/readme-images/bug-fix.png)
  - I had this in my code already but there was a typo.
+ - After correcting the spelling mistake, registration is now working as expected.
 
 ## Future Implementations
 There are many features that will improve the user's experience of the current web app. 
@@ -295,6 +326,11 @@ For final deployment:
 _NOTE: I could not deploy this way, unfortunately. A CI tutor told me that in order to deploy, I must have DEBUG = True in settings.py and DEBUG = FALSE in Heroku. A fellow student thought it might be a problem with the static files. I ran `python3 manage.py collectstatic` but this did not help either. Another CI tutor did troubleshooting with me and found a database error because Django is finding an earlier version of the database. I cannot recreate the error locally. When I try to run locally, I get Server Error (500). In settings.py DEBUG = False, and the app is running on Heroku. For now, this is the best I could do before submission. Actually finally it was no longer deploying from Heroku and so that the assessors can at least see my project, I set everything back to the way it was before. DEBUG = True in settings.py and DEBUG = FALSE in config vars._
 18. When development is complete change the debug setting to: `DEBUG = False` in settings.py
 19. In Heroku settings, delete the config vars for `DISABLE_COLLECTSTATIC = 1`, and `DEBUG = FALSE`
+
+<!-- From the assessment:
+6.4	Ensure the security of the deployed version, making sure to not include any passwords in the git repository, that all secret keys are hidden in environment variables or in files that are in .gitignore, and that DEBUG mode is turned off
+No.
+DEBUG mode is turned on. -->
 
 _Thanks to [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blob/main/README.md?plain=1) for the basis for these deployment instructions._
 
