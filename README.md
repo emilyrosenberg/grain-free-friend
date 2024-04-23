@@ -275,12 +275,17 @@ Deployment bug
   <img src="static/images/readme-images/deployment-bug3.png" alt="" width="450">
 </div>
 
-- Tutoring helped me find the error and fix it with an if statement:
+- Tutoring helped me find the error and fix it with an if statement, and the site loaded with no errors:
 <div align="center">
   <img src="static/images/readme-images/deployment-bug4.png" alt="" width="450">
 </div>
 
-- The site loads with no errors.
+- In Heroku Config Vars I still had DEBUG = FALSE. Tutoring helped me create an error log file with this code in settings.py:
+<div align="center">
+  <img src="static/images/readme-images/error-logging.png" alt="" width="450">
+</div>
+
+- There was a leading slash in the head of the base.html file. Removing the slash allowed the site to run without errors.
 
 ## Future Implementations
 There are many features that will improve the user's experience of the current web app. 
