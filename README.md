@@ -1,7 +1,9 @@
 # Grain Free Friend
 Your baking buddy for alternative breads and more
 
-![Mockup on different devices, created with Techsini.](static/images/readme-images/mockup.png)
+<div align="left">
+  <img src="static/images/readme-images/mockup.png" alt="Mockup on different devices, created with Techsini" width="">
+</div>
 
 Grain Free Friend is a recipe sharing web app that invites home bakers to join a worldwide community for support and solutions. It was started in 2024 to share the secrets of baking without grain or sugar. GFF is a way to find the basic recipes that work every day, as well as fancy treats for special occasions.
 <br>
@@ -119,8 +121,11 @@ Along with the design rationale, extensive wireframes, mockups and diagrams crea
 
 ### Surface
 #### Colors
-The color palette is from [Lilybug Design](https://www.lilybugdesign.co.nz/colour-wall). I saw one of these designs used in a [PP4 project by Roshna Vakkee](https://github.com/RoshnaVakkeel/Little_Learners_Lab_Logs?tab=readme-ov-file), and found a beautiful one for my project. This palette is fresh and lively, as well as warm. It supports the Grain Free Friend branding: accessible, fun, warm, supportive. <br>
-![Color palette](static/images/readme-images/color-palette.png)
+The color palette is from [Lilybug Design](https://www.lilybugdesign.co.nz/colour-wall). I saw one of these designs used in a [PP4 project by Roshna Vakkee](https://github.com/RoshnaVakkeel/Little_Learners_Lab_Logs?tab=readme-ov-file), and found a beautiful one for my project. This palette is fresh and lively, as well as warm. It supports the Grain Free Friend branding: accessible, fun, warm, supportive.
+<div align="left">
+  <img src="static/images/readme-images/color-palette.png" alt="Color palette" width="450">
+</div>
+
 I used colorpicker to get the HEX tags for each color. <br>
 Colors were picked with [imagecolorpicker.com](https://imagecolorpicker.com/en). <br>
 Custom black and white were chosen from [Color Meanings](https://www.color-meanings.com/) to complement the colorful palette.
@@ -134,17 +139,30 @@ These colors are currently used on the site:
 
 #### Fonts
 The fonts used in this project are implemented as a url from [Google Fonts](https://fonts.google.com/). <br>
-The title font is [Montserrat](https://fonts.google.com/specimen/Montserrat). This is a bold, modern font with a rounded shape that's friendly and accessible. It was an option in the logo maker, and I decided to use it for the titles as well. <br>
-![Montserrat font](static/images/readme-images/font-montserrat.png)
-The main font is [Raleway](https://fonts.google.com/specimen/Raleway). This is a friendly, readable font in a modern style. It makes the recipe ingredients and instructions very clear and accessible. <br>
-![Raleway font](static/images/readme-images/font-raleway.png)
+The title font is [Montserrat](https://fonts.google.com/specimen/Montserrat). This is a bold, modern font with a rounded shape that's friendly and accessible. It was an option in the logo maker, and I decided to use it for the titles as well.
+<div align="left">
+  <img src="static/images/readme-images/font-montserrat.png" alt="Montserrat font" width="450">
+</div>
+
+The main font is [Raleway](https://fonts.google.com/specimen/Raleway). This is a friendly, readable font in a modern style. It makes the recipe ingredients and instructions very clear and accessible.
+<div align="left">
+  <img src="static/images/readme-images/font-raleway.png" alt="Raleway font" width="450">
+</div>
+
 #### Logo
 The logo represents the joy of heartfelt baking for oneself or others. Trying unconventional baking methods can be intimidating, and I wanted to show that it can also be simple, an act of kindness and community. It's an open source icon with the initials of Grain Free Friend in Montserrat font.<br>
-The logo image was created using the [wix.com logo maker](https://www.wix.com/logo/maker). <br>
-![Logo](static/images/logo.png)
+The logo image was created using the [wix.com logo maker](https://www.wix.com/logo/maker).
+<div align="left">
+  <img src="static/images/logo.png" alt="Logo" width="200">
+</div>
+
 #### Favicon
-The favicon was created from the logo image using the [favico.io favicon converter](https://favicon.io/favicon-converter/). <br>
-![Favicon](static/images/readme-images/favicon-image.png)
+The favicon was created from the logo image using the [favico.io favicon converter](https://favicon.io/favicon-converter/).
+
+<div align="left">
+  <img src="static/images/readme-images/favicon-image.png" alt="Favicon" width="100">
+</div>
+
 #### Images
 The recipe images are either my personal photos or from [Unsplash](https://unsplash.com/).
 <br>
@@ -229,8 +247,11 @@ User registration error
 - On registering as a new user, an error message appeared: "ConnectionRefusedError at /accounts/signup/"
 - I checked that everything looked ok on Heroku
 - I searched the PP4 Slack channel and found [this advice](https://code-institute-room.slack.com/archives/C7EJUQT2N/p1649343681449299?thread_ts=1649342508.908129&cid=C7EJUQT2N) to use this line of code in settings.py
-![Email authentification setting](staticfiles/images/readme-images/bug-fix.png)
-- I had this in my code already but there was a typo.
+<div align="center">
+  <img src="staticfiles/images/readme-images/bug-fix.png" alt="Email authentification setting" width="450">
+</div>
+
+- I had `ACCOUNT_EMAIL_VERIFICATION = none` in my code already but there was a typo.
 - After correcting the spelling mistake, registration is now working as expected.
 
 Deployment bug
