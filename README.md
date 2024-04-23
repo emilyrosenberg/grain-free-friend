@@ -200,30 +200,59 @@ The favorite finder page allows logged-in users to see a random recipe or a reci
 In the favorites finder, a user can save a recipe to their favorites and view them on the Favorites page.
 ### Manual Testing
 This web app was tested in Chrome Developer Tools for troubleshooting functionality and style problems during development. It was tested on iOS with Chrome and Safari. The UX design was tested by users.
+
 ### Bugs
-- Missing imports <br>
-The installed libraries would not run. The error message was: <i>Import "django_resized" could not be resolved.</i> The solution really was [to turn it off and on](https://stackoverflow.com/questions/65933570/import-boto3-could-not-be-resolved-python-vs-code). I restarted VS Code, and this fixed the bug.
+Missing imports
+- The installed libraries would not run. The error message was: <i>Import "django_resized" could not be resolved.</i> The solution really was [to turn it off and on](https://stackoverflow.com/questions/65933570/import-boto3-could-not-be-resolved-python-vs-code). I restarted VS Code, and this fixed the bug.
 - Add input field for levels <br>
 The first time I tried to add an input field, the site would not run. I realized I needed to make migrations, which fixed the bug. I ran: <br>
 `python3 manage.py makemigrations` <br>
 `python3 manage.py migrate`
-- Multi-select field <br>
-I wanted to add something like tags to show the attributes of each recipe. It seemed like this would be possible with CheckboxSelectMultiple. I created the code but it did not work. I searched Stack Overflow, asked my fellow students, asked ChatGPT, and finally found out that I needed a later version of Django to run crispy forms, but only an earlier version could implement CheckboxSelectMultiple. Unfortunately I had to abandon the idea of a multi-select field. Instead I used 3 dropdown menus to list up to 3 attributes of the recipe. It is not the best UX, but they are searchable, and visible on each recipe card as if they are tags.
-- Loading static files on the deployed site <br>
-The static files wouldn't load, so I did some research and found [from Stack Overflow](https://stackoverflow.com/questions/28961177/heroku-static-files-not-loading-django) that I needed to install whitenoise. I installed whitenoise per [these instructions](https://devmaesters.com/blog/34). After I updated my requirements.txt, the files loaded.
-- Adding a recipe to the Favorites page from the Favorite Finder. <br>
-I created this site without a profile page, to simplify development. But when I got to this functionality for a logged-in user, it wasn't working according to the logic of the tutorial (which does include a profile, plus more search criteria). It seemed like I would have to create a new model, or make a lot of changes to the existing ones. It was necessary to:
+
+Multi-select field
+- I wanted to add something like tags to show the attributes of each recipe. It seemed like this would be possible with CheckboxSelectMultiple. I created the code but it did not work.
+- I searched Stack Overflow, asked my fellow students, asked ChatGPT, and finally found out that I needed a later version of Django to run crispy forms, but only an earlier version could implement CheckboxSelectMultiple.
+- Unfortunately I had to abandon the idea of a multi-select field. Instead I used 3 dropdown menus to list up to 3 attributes of the recipe. It is not the best UX, but they are searchable, and visible on each recipe card as if they are tags.
+
+Loading static files on the deployed site
+- The static files wouldn't load, so I did some research and found [from Stack Overflow](https://stackoverflow.com/questions/28961177/heroku-static-files-not-loading-django) that I needed to install whitenoise.
+- I installed whitenoise per [these instructions](https://devmaesters.com/blog/34). After I updated my requirements.txt, the files loaded.
+Adding a recipe to the Favorites page from the Favorite Finder. <br>
+- I created this site without a profile page, to simplify development. But when I got to this functionality for a logged-in user, it wasn't working according to the logic of the tutorial (which does include a profile, plus more search criteria).
+- It seemed like I would have to create a new model, or make a lot of changes to the existing ones. It was necessary to:
   - Change the url from favorites to add_option.
   - Add the recipe pk to the form action.
   - Add pk to the parameters for post.
-Error messages were still coming up. I found this [solution](https://docs.djangoproject.com/en/5.0/ref/models/instances/) and experimented with syntax, and was able to fix the bug and successfully add a recipe to favorites.
-- User registrations error
- - On registering as a new user, an error message appeared: "ConnectionRefusedError at /accounts/signup/"
- - I checked that everything looked ok on Heroku
- - I searched the PP4 Slack channel and found [this advice](https://code-institute-room.slack.com/archives/C7EJUQT2N/p1649343681449299?thread_ts=1649342508.908129&cid=C7EJUQT2N) to use this line of code in settings.py
- ![Email authentification setting](staticfiles/images/readme-images/bug-fix.png)
- - I had this in my code already but there was a typo.
- - After correcting the spelling mistake, registration is now working as expected.
+- Error messages were still coming up. I found this [solution](https://docs.djangoproject.com/en/5.0/ref/models/instances/) and experimented with syntax, and was able to fix the bug and successfully add a recipe to favorites.
+
+User registration error
+- On registering as a new user, an error message appeared: "ConnectionRefusedError at /accounts/signup/"
+- I checked that everything looked ok on Heroku
+- I searched the PP4 Slack channel and found [this advice](https://code-institute-room.slack.com/archives/C7EJUQT2N/p1649343681449299?thread_ts=1649342508.908129&cid=C7EJUQT2N) to use this line of code in settings.py
+![Email authentification setting](staticfiles/images/readme-images/bug-fix.png)
+- I had this in my code already but there was a typo.
+- After correcting the spelling mistake, registration is now working as expected.
+
+Deployment bug
+- When I tried to deploy, my site would not load. A CI tutor told me that in order to deploy, I must have DEBUG = True in settings.py and DEBUG = FALSE in Heroku. A fellow student thought it might be a problem with the static files.
+- I ran `python3 manage.py collectstatic` but this did not help either.
+- Another CI tutor did troubleshooting with me and found a database error because Django is finding an earlier version of the database.
+- I could not recreate the error locally. When I tried to run locally, I got Server Error (500). I set DEBUG = False in settings.py, and the app ran on Heroku, but then stopped.
+- I set everything back to the way it was before. DEBUG = True in settings.py and DEBUG = FALSE in Heroku Config Vars.
+- I rewrote some settings in settings.py:
+<div align="center">
+  <img src="static/images/readme-images/deployment-bug1.png" alt="" width="450">
+</div>
+
+- and env.py:
+<div align="center">
+  <img src="static/images/readme-images/deployment-bug2.png" alt="" width="450">
+</div>
+
+- I then got this error message instead of the server error:
+<div align="center">
+  <img src="static/images/readme-images/deployment-bug3.png" alt="" width="450">
+</div>
 
 ## Future Implementations
 There are many features that will improve the user's experience of the current web app. 
@@ -323,7 +352,6 @@ This site was deployed by completing the following steps:
 16. Scroll to the bottom of the deploy page and select the preferred deployment type. Enable Automatic Deploys for automatic deployment when you push updates to Github
 17. Create a Procfile `web: gunicorn <your_project_name>.wsgi`
 For final deployment:
-_NOTE: I could not deploy this way, unfortunately. A CI tutor told me that in order to deploy, I must have DEBUG = True in settings.py and DEBUG = FALSE in Heroku. A fellow student thought it might be a problem with the static files. I ran `python3 manage.py collectstatic` but this did not help either. Another CI tutor did troubleshooting with me and found a database error because Django is finding an earlier version of the database. I cannot recreate the error locally. When I try to run locally, I get Server Error (500). In settings.py DEBUG = False, and the app is running on Heroku. For now, this is the best I could do before submission. Actually finally it was no longer deploying from Heroku and so that the assessors can at least see my project, I set everything back to the way it was before. DEBUG = True in settings.py and DEBUG = FALSE in config vars._
 18. When development is complete change the debug setting to: `DEBUG = False` in settings.py
 19. In Heroku settings, delete the config vars for `DISABLE_COLLECTSTATIC = 1`, and `DEBUG = FALSE`
 
