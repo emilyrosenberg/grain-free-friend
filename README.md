@@ -254,6 +254,13 @@ Deployment bug
   <img src="static/images/readme-images/deployment-bug3.png" alt="" width="450">
 </div>
 
+- Tutoring helped me find the error and fix it with an if statement:
+<div align="center">
+  <img src="static/images/readme-images/deployment-bug4.png" alt="" width="450">
+</div>
+
+- The site loads with no errors.
+
 ## Future Implementations
 There are many features that will improve the user's experience of the current web app. 
 - User can delete favorites. The CRUD functionality of the favorites app will be updated to include deleting favorites as well as adding them.
