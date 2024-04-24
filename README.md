@@ -503,6 +503,7 @@ _Thanks to [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blo
 - Inspiration for this readme came from [gStarhigh](https://github.com/gStarhigh/pro4). When I finish it I hope I can come anywhere close to this standard.
 - An outline of the deployment instructions came from [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blob/main/README.md#frameworks---libraries---programs-used).
 - Thank you to the Code Institute tutors for their enthusiastic support with problem solving and squashing bugs.
-- Thank you to my Code Institute mentor Adegbenga Adeye.
+- Thank you to my Code Institute mentor Adegbenga Adeye for helping with the planning for this project.
+- Thank you to my CI mentor Martina Terlevic for inspiring and supporting me through the project improvements and lots of learning!
 - Thanks to my Code Institute cohort facilitator Kristyna, who is the best at pep talks. Also thanks for suggesting the recipe sharing tutorial by Dee Mc!
 - And last but not least, thank you to my amazing student pals who have banded together to provide positivity and solutions in the tough times, and celebrations in the good ones.
