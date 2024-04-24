@@ -160,7 +160,7 @@ The logo image was created using the [wix.com logo maker](https://www.wix.com/lo
 The favicon was created from the logo image using the [favico.io favicon converter](https://favicon.io/favicon-converter/).
 
 <div align="left">
-  <img src="static/images/readme-images/favicon-image.png" alt="Favicon" width="100">
+  <img src="static/images/readme-images/favicon-image.png" alt="Favicon" width="75">
 </div>
 
 #### Images
@@ -172,7 +172,7 @@ They are stored in and accessed through [Cloudinary](https://cloudinary.com).
 The background is the lightest color in the palette, so that the content is clearly visible.
 
 ## Testing
-Unfortunately technical testing is a future implementation.
+<!-- Unfortunately technical testing is a future implementation. -->
 
 <!-- From the assessment:
 4.3	Document all implemented testing in the README. 
@@ -194,11 +194,31 @@ Ideally, manual test cases should focus on each individual section of every page
 * Fix - I did Z to the code because something was missing. -->
 
 #### Lighthouse
+This web app was tested with Lighthouse in Chrome Developer tools, with the following results.
+
+Desktop results:
+<div align="left">
+  <img src="static/images/readme-images/lighthouse-desktop.png" alt="Lighthouse report for desktop" width="350">
+</div>
+
+Mobile results:
+<div align="left">
+  <img src="static/images/readme-images/lighthouse-mobile.png" alt="Lighthouse report for mobile" width="350">
+</div>
+
 ### Code Validation
 #### HTML
+I ran the website address through the [W3C Markup Validator](https://validator.w3.org/). There was a recommendation, which I corrected. There are no errors.
+<div align="left">
+  <img src="static/images/readme-images/html-error.png" alt="Html error" width="500">
+</div>
+
 #### CSS
-#### Javascript
+I ran the website address through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). There are no errors.
+
+#### JavaScript
 #### Python
+
 ### User Stories Testing
 - _Account registration: As a Site User I can register an account so that I can add my own recipes, plus update and delete them._<br>
 The user can click on Register in the navbar to create an account with a username and password.
@@ -216,8 +236,9 @@ The recipes page shows all recipes on the site.
 The favorite finder page allows logged-in users to see a random recipe or a recipe based on keywords.
 - _Save favorites: As a Site User I can add and save favorites so that I can return to the site to see recipes that suit me._<br>
 In the favorites finder, a user can save a recipe to their favorites and view them on the Favorites page.
+
 ### Manual Testing
-This web app was tested in Chrome Developer Tools for troubleshooting functionality and style problems during development. It was tested on iOS with Chrome and Safari. The UX design was tested by users.
+This web app was tested in Chrome Developer Tools for troubleshooting functionality and style problems during development. Responsiveness was tested with CDT and [Responsive Design Checker](https://responsivedesignchecker.com/). Functionality was tested on iOS with Chrome and Safari. The UX design was tested by users.
 
 ### Bugs
 Missing imports
