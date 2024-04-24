@@ -111,6 +111,10 @@ The header includes the GFF logo, navigation items, and a search bar.
 The footer contains social media links. Social media icons were created with [UXWing](https://uxwing.com/).
 
 ### Design
+This web app was designed to...
+<!-- Add content -->
+
+#### Wireframes
 
 <!-- From the assessment:
 1.13	Document the UX design work undertaken for this project, including any wireframes, mockups, diagrams, etc.,created as part of the design process and its reasoning. Include diagrams created as part of the design process and demonstrate that these have been followed through to implementation
@@ -171,6 +175,78 @@ They are stored in and accessed through [Cloudinary](https://cloudinary.com).
 #### Background
 The background is the lightest color in the palette, so that the content is clearly visible.
 
+#### Screenshots
+A selection of screenshots on desktop and mobile. <br>
+
+When a user first visits Grain Free Friend, they see the landing page:
+<div align="left">
+  <img src="static/images/readme-images/landing-page2.png" alt="Landing page on desktop" width="500">
+</div>
+
+Registration:
+<div align="left">
+  <img src="static/images/readme-images/register.png" alt="Registration" width="350">
+</div>
+
+Log in:
+<div align="left">
+  <img src="static/images/readme-images/login.png" alt="Log in" width="350">
+</div>
+
+Landing page for a logged-in user:
+<div align="left">
+  <img src="static/images/readme-images/landing-page1.png" alt="Landing page for a logged-in user" width="500">
+</div>
+
+About:
+<div align="left">
+  <img src="static/images/readme-images/about.png" alt="About" width="500">
+</div>
+
+Favorites:
+<div align="left">
+  <img src="static/images/readme-images/favorites.png" alt="Favorites" width="500">
+</div>
+
+Favorite Finder:
+<div align="left">
+  <img src="static/images/readme-images/favorite-finder.png" alt="Favorite finder" width="350">
+</div>
+
+Favorite Finder search:
+<div align="left">
+  <img src="static/images/readme-images/favorite-finder-search.png" alt="Favorite finder search" width="350">
+</div>
+
+All recipes:
+<div align="left">
+  <img src="static/images/readme-images/all-recipes.png" alt="All recipes" width="500">
+
+Add recipe:
+<div align="left">
+  <img src="static/images/readme-images/add-recipe.png" alt="Add recipe" width="350">
+</div>
+
+Edit recipe:
+<div align="left">
+  <img src="static/images/readme-images/edit-recipe.png" alt="Edit recipe" width="350">
+</div>
+
+Log out:
+<div align="left">
+  <img src="static/images/readme-images/log-out.png" alt="Log out" width="500">
+</div>
+
+Landing page, mobile:
+<div align="left">
+  <img src="static/images/readme-images/landing-page-mobile.png" alt="Landing page on mobile" width="250">
+</div>
+
+Add recipe, mobile:
+<div align="left">
+  <img src="static/images/readme-images/add-recipe-mobile.png" alt="Add recipe on mobile" width="250">
+</div>
+
 ## Testing
 <!-- Unfortunately technical testing is a future implementation. -->
 
@@ -216,8 +292,10 @@ I ran the website address through the [W3C Markup Validator](https://validator.w
 #### CSS
 I ran the website address through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). There are no errors.
 
-#### JavaScript
+<!-- #### JavaScript -->
+
 #### Python
+Code was formatted with the [black](https://pypi.org/project/black/) linter.
 
 ### User Stories Testing
 - _Account registration: As a Site User I can register an account so that I can add my own recipes, plus update and delete them._<br>
@@ -407,12 +485,8 @@ This site was deployed by completing the following steps:
 17. Create a Procfile `web: gunicorn <your_project_name>.wsgi`
 For final deployment:
 18. When development is complete change the debug setting to: `DEBUG = False` in settings.py
-19. In Heroku settings, delete the config vars for `DISABLE_COLLECTSTATIC = 1`, and `DEBUG = FALSE`
-
-<!-- From the assessment:
-6.4	Ensure the security of the deployed version, making sure to not include any passwords in the git repository, that all secret keys are hidden in environment variables or in files that are in .gitignore, and that DEBUG mode is turned off
-No.
-DEBUG mode is turned on. -->
+19. In Heroku settings, delete the config vars for `DISABLE_COLLECTSTATIC = 1`, and `DEBUG = FALSE` <br>
+_Note: I was not able to deploy in exactly this way, please see the [Bugs](#bugs) section for more information._
 
 _Thanks to [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blob/main/README.md?plain=1) for the basis for these deployment instructions._
 

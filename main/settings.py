@@ -27,7 +27,7 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     ".gitpod.io",
-    "grain-free-friend-d9004ed6c6b5.herokuapp.com"
+    "grain-free-friend-d9004ed6c6b5.herokuapp.com",
 ]
 
 
