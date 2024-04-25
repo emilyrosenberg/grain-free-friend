@@ -111,17 +111,35 @@ The header includes the GFF logo, navigation items, and a search bar.
 The footer contains social media links. Social media icons were created with [UXWing](https://uxwing.com/).
 
 ### Design
-This web app was designed to...
-<!-- Add content -->
+The Grain Free Friend mission is to make grain-free baking more accessible and customized for the needs of the community. The web app was designed to be simple and appealing for new and experienced home cooks. Navigation is simple and clear. The layout is uniform and intuitive across the site, keeping the user's focus on the content.
 
 #### Wireframes
+A selection of wireframes showing the layout. <br>
 
-<!-- From the assessment:
-1.13	Document the UX design work undertaken for this project, including any wireframes, mockups, diagrams, etc.,created as part of the design process and its reasoning. Include diagrams created as part of the design process and demonstrate that these have been followed through to implementation
-No.
-The design process and its reasoning are documented but could be improved. Wireframes, mockups and diagrams created as part of the design process are missing from the README.
+The landing page for an unregistered user:
+<div align="left">
+  <img src="static/images/readme-images/wf-landing-page.png" alt="Landing page" width="500">
+</div>
 
-Along with the design rationale, extensive wireframes, mockups and diagrams created as part of the design process should be included in the README.-->
+The page showing all recipes:
+<div align="left">
+  <img src="static/images/readme-images/wf-recipes.png" alt="Wireframe design of all recipes" width="500">
+</div>
+
+A registered user's Favorites page:
+<div align="left">
+  <img src="static/images/readme-images/wf-favorites.png" alt="Wireframe design of favorites page" width="500">
+</div>
+
+The Favorites Finder feature, with the option to save the recipe to the user's Favorites:
+<div align="left">
+  <img src="static/images/readme-images/wf-favorite-finder.png" alt="Wireframe design of favorites finder" width="500">
+</div>
+
+The Add Recipe form, where a user can add their own recipe:
+<div align="left">
+  <img src="static/images/readme-images/wf-add-recipe.png" alt="Wireframe design of Add Recipe form" width="500">
+</div>
 
 ### Surface
 #### Colors
