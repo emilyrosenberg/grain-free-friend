@@ -37,14 +37,14 @@ This website is responsive on all devices, and designed to be appealing and intu
 
 These stories guided the development of features. To implement Agile methodology, they were mapped to Github Projects in a [kanban board](https://github.com/users/emilyrosenberg/projects/4/views/1) along with other development tasks. They are grouped into Milestones and tagged with priority labels.
 
-- Account registration: As a Site User I can register an account so that I can add my own recipes, plus update and delete them.
-- Manage user posts: As a Site User I can create, read, update and delete recipes within my account so that I can manage my contributions.
-- Manage posts: As a Site Admin I can create, read, update and delete recipes so that I can manage my site content.
-- Search by keyword: As a Site User I can search by keyword so that I can find recipes with specific ingredients, methods, etc.
-- Open a recipe: As a Site User I can click on a recipe so that I can read the full text.
-- View recipe list: As a Site User I can view a list of recipes so that I can select one to read.
-- Find favorites: As a Site User I can use keywords to search for new favorites so that I can discover new recipes that suit me.
-- Save favorites: As a Site User I can add and save favorites so that I can return to the site to see recipes that suit me.
+- [Account registration](https://github.com/emilyrosenberg/grain-free-friend/issues/5): As a Site User I can register an account so that I can add my own recipes, plus update and delete them.
+- [Manage user posts](https://github.com/emilyrosenberg/grain-free-friend/issues/10): As a Site User I can create, read, update and delete recipes within my account so that I can manage my contributions.
+- [Manage posts](https://github.com/emilyrosenberg/grain-free-friend/issues/9): As a Site Admin I can create, read, update and delete recipes so that I can manage my site content.
+- [Search by keyword](https://github.com/emilyrosenberg/grain-free-friend/issues/15): As a Site User I can search by keyword so that I can find recipes with specific ingredients, methods, etc.
+- [Open a recipe](https://github.com/emilyrosenberg/grain-free-friend/issues/2): As a Site User I can click on a recipe so that I can read the full text.
+- [View recipe list](https://github.com/emilyrosenberg/grain-free-friend/issues/1): As a Site User I can view a list of recipes so that I can select one to read.
+- [Find favorites](https://github.com/emilyrosenberg/grain-free-friend/issues/29): As a Site User I can use keywords to search for new favorites so that I can discover new recipes that suit me.
+- [Save favorites](https://github.com/emilyrosenberg/grain-free-friend/issues/30): As a Site User I can add and save favorites so that I can return to the site to see recipes that suit me.
 
 ### Structure
 #### Landing Page
@@ -113,7 +113,7 @@ The header includes the GFF logo, navigation items, and a search bar.
 The footer contains social media links. Social media icons were created with [UXWing](https://uxwing.com/).
 
 ### Design
-The Grain Free Friend mission is to make grain-free baking more accessible and customized for the needs of the community. The web app was designed to be simple and appealing for new and experienced home cooks. Navigation is simple and clear. The layout is uniform and intuitive across the site, keeping the user's focus on the content.
+The Grain Free Friend mission is to make grain-free baking more accessible and customized for the needs of the community. The web app was designed to be simple and appealing for new and experienced home cooks. Navigation is simple and clear. The layout is uniform and intuitive across the site, keeping the user's focus on the content. User recipes include the ability to use markdown for clarity, and user-submitted recipe images are cropped to a square, to keep the visual layout consistent.
 
 #### Wireframes
 A selection of wireframes showing the layout. <br>
