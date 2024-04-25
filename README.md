@@ -20,8 +20,15 @@ This website is responsive on all devices, and designed to be appealing and intu
   - [Structure](#structure)
   - [Features](#features)
   - [Design](#design)
+    - [Wireframes](#wireframes)
   - [Surface](#surface)
+    - [Screenshots](#screenshots)
 - [Testing](#testing)
+  - [Performance](#performance)
+  - [Code Validation](#code-validation)
+  - [User Stories Testing](#user-stories-testing)
+  - [Manual Testing](#manual-testing)
+  - [Bugs](#bugs)
 - [Future Implementations](#future-implementations)
 - [Languages, Libraries, and Software](#languages-libraries-and-software)
 - [Deployment](#deployment)
@@ -294,8 +301,8 @@ Ideally, manual test cases should focus on each individual section of every page
 * Result - The feature did not respond due to A,B,C or Result - The feature acted as normally and it did Y 
 * Fix - I did Z to the code because something was missing. -->
 
-#### Lighthouse
-This web app was tested with Lighthouse in Chrome Developer tools, with the following results.
+### Performance
+The performance of this web app was tested with Lighthouse in Chrome Developer tools, with the following results.
 
 Desktop results:
 <div align="left">
