@@ -122,6 +122,8 @@ The footer contains social media links. Social media icons were created with [UX
 ### Design
 The Grain Free Friend mission is to make grain-free baking more accessible and customized for the needs of the community. The web app was designed to be simple and appealing for new and experienced home cooks. Navigation is simple and clear. The layout is uniform and intuitive across the site, keeping the user's focus on the content. User recipes include the ability to use markdown for clarity, and user-submitted recipe images are cropped to a square, to keep the visual layout consistent.
 
+<!-- Add database schema -->
+
 #### Wireframes
 A selection of wireframes showing the layout. <br>
 
@@ -376,6 +378,7 @@ The functionality of links and other user actions was tested manually, with the 
 |  |  |  | ✅ |
 |  |  |  | ✅ |
 
+<!-- Finish table -->
 
 ### Bugs
 Missing imports
@@ -445,6 +448,10 @@ Deployment bug
 
 - There was a leading slash in the head of the base.html file. Removing the slash allowed the site to run without errors.
 
+Admin panel is not accessible from the deployed site
+- When I navigate to admin/ there is a Server Error (500)
+<!-- Fix this bug!! -->
+
 ## Future Implementations
 There are many features that will improve the user's experience of the current web app. 
 - User can delete favorites. The CRUD functionality of the favorites app will be updated to include deleting favorites as well as adding them.
@@ -453,7 +460,7 @@ There are many features that will improve the user's experience of the current w
 - User can filter a search by tag. This will also involve creating tags, instead of the placeholder fix in the current version.
 - Require admin approval for user-submitted recipes and comments. the user can submit a recipe, and when it is approved, it will be published.
 - Add contact form. As a placeholder, the Contact button on the About page currently links to Facebook's home page.
-- Make custom 403 and 404 pages visible.
+- Make custom 403 page visible.
 - Custom feedback messages.
 - Update styling and visual appeal.
 - Content. My grain-free recipe development project is ongoing.
