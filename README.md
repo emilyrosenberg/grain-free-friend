@@ -99,7 +99,9 @@ The About page is all about Grain Free Friend's community and mission.
 #### Contact
 This is a future implementation. It will include a contact form.
 #### 403 & 404
-These pages exist and will become visible in a future implementation.
+The user lands on the 404 (not found) page when they try to access a page that doesn't exist. <br>
+
+The 403 (unauthorized access) page exists and will become visible in a future implementation.
 
 ### Features
 #### Header and Navigation
@@ -255,6 +257,11 @@ Log out:
   <img src="static/images/readme-images/log-out.png" alt="Log out" width="500">
 </div>
 
+404 - Not Found:
+<div align="left">
+  <img src="static/images/readme-images/404-page.png" alt="404 not found" width="200">
+</div>
+
 Landing page, mobile:
 <div align="left">
   <img src="static/images/readme-images/landing-page-mobile.png" alt="Landing page on mobile" width="250">
@@ -316,25 +323,52 @@ I ran the website address through the [W3C CSS Validator](https://jigsaw.w3.org/
 Code was formatted with the [black](https://pypi.org/project/black/) linter.
 
 ### User Stories Testing
-- _Account registration: As a Site User I can register an account so that I can add my own recipes, plus update and delete them._<br>
-The user can click on Register in the navbar to create an account with a username and password.
-- _Manage user posts: As a Site User I can create, read, update and delete recipes within my account so that I can manage my contributions._<br>
-While logged in, the user can click on Add Recipe to add a recipe with a form. On the recipe detail page, they have the option of editing and deleting the recipe.
-- _Manage posts: As a Site Admin I can create, read, update and delete recipes so that I can manage my site content._<br>
-The admin panel provides all of this functionality.
-- _Search by keyword: As a Site User I can search by keyword so that I can find recipes with specific ingredients, methods, etc._<br>
-The search bar in the header allows the user to search for recipes by keyword.
-- _Open a recipe: As a Site User I can click on a recipe so that I can read the full text._<br>
-The recipe detail page shows each recipe's title, description, level, method, and up to 3 tags, as well as a photo and the ingredients and instructions.
-- _View recipe list: As a Site User I can view a list of recipes so that I can select one to read._<br>
-The recipes page shows all recipes on the site.
-- _Find favorites: As a Site User I can use keywords to search for new favorites so that I can discover new recipes that suit me._<br>
-The favorite finder page allows logged-in users to see a random recipe or a recipe based on keywords.
-- _Save favorites: As a Site User I can add and save favorites so that I can return to the site to see recipes that suit me._<br>
-In the favorites finder, a user can save a recipe to their favorites and view them on the Favorites page.
+All user stories were tested with the website's functionality. These are the results:
+
+| User Story | Pass | Details |
+| :- | :-: | :-|
+| **Account registration**: As a Site User I can register an account so that I can add my own recipes, plus update and delete them. | ✅ | The user can click on Register in the navbar to create an account with a username and password. |
+| **Manage user posts**: As a Site User I can create, read, update and delete recipes within my account so that I can manage my contributions. | ✅ | While logged in, the user can click on Add Recipe to add a recipe with a form. On the recipe detail page, they have the option of editing and deleting the recipe. |
+| **Manage posts**: As a Site Admin I can create, read, update and delete recipes so that I can manage my site content. | ✅ | The admin panel provides the ability to create, read, update and delete recipes and other content. |
+| **Search by keyword**: As a Site User I can search by keyword so that I can find recipes with specific ingredients, methods, etc. | ✅ | The search bar in the header allows the user to search for recipes by keyword. |
+| **Open a recipe**: As a Site User I can click on a recipe so that I can read the full text. | ✅ | The recipe detail page shows each recipe's title, description, level, method, and up to 3 tags, as well as a photo and the ingredients and instructions. |
+| **View recipe list**: As a Site User I can view a list of recipes so that I can select one to read. | ✅ | The recipes page shows all recipes on the site. |
+| Find favorites: As a Site User I can use keywords to search for new favorites so that I can discover new recipes that suit me. | ✅ | The favorite finder page allows logged-in users to see a random recipe or a recipe based on keywords. |
+| Save favorites: As a Site User I can add and save favorites so that I can return to the site to see recipes that suit me. | ✅ | In the favorites finder, a user can save a recipe to their favorites and view them on the Favorites page. |
 
 ### Manual Testing
 This web app was tested in Chrome Developer Tools for troubleshooting functionality and style problems during development. Responsiveness was tested with CDT and [Responsive Design Checker](https://responsivedesignchecker.com/). Functionality was tested on iOS with Chrome and Safari. The UX design was tested by users.
+
+The functionality of links and other user actions was tested manually, with the following results:
+
+| Action | Expectation | Details | Pass |
+| :- | :- | :- | :-: |
+| Navbar - Logo link | Direct to home page |  | ✅ |
+| Navbar - Home link | Direct to home page |  | ✅ |
+| Navbar - Recipes link | Direct to recipes/ |  | ✅ |
+| Navbar - Add Recipe link (not logged in) | Redirect to accounts/login/ |  | ✅ |
+| Navbar - Add Recipe link (logged in) | Direct to recipes/add/ |  | ✅ |
+| Navbar - About link | Direct to about/ |  | ✅ |
+| Navbar - Register link | Direct to accounts/signup/ |  | ✅ |
+| Navbar - Login link | Direct to accounts/login/ |  | ✅ |
+| Navbar - Search input | User can enter text |  | ✅ |
+| Navbar - Search button | Direct to Recipes page and show all recipes that include entered content |  | ✅ |
+| Footer - Social links | Direct to Patreon, Facebook, etc. |  | ✅ |
+| Sign in - Sign in button | Sign in, redirect to home page, show success message |  | ✅ |
+| About - Contact button | Direct to facebook.com | In the future this will be a contact form | ✅ |
+|  |  |  | ✅ |
+|  |  |  | ✅ |
+|  |  |  | ✅ |
+|  |  |  | ✅ |
+|  |  |  | ✅ |
+|  |  |  | ✅ |
+|  |  |  | ✅ |
+|  |  |  | ✅ |
+|  |  |  | ✅ |
+|  |  |  | ✅ |
+|  |  |  | ✅ |
+|  |  |  | ✅ |
+
 
 ### Bugs
 Missing imports
