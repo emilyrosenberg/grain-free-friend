@@ -54,6 +54,13 @@ These stories guided the development of features. To implement Agile methodology
 - [Save favorites](https://github.com/emilyrosenberg/grain-free-friend/issues/30): As a Site User I can add and save favorites so that I can return to the site to see recipes that suit me.
 
 ### Structure
+
+#### Entity relationship diagram
+This web app has a User model which comes from Django, a Recipe model which shows all over the site in different configurations, and an Option model which handles Favorites.
+<div align="left">
+  <img src="static/images/readme-images/entity-relationship.png" alt="Entity relationship diagram" width="450">
+</div>
+
 #### Landing Page
 The landing page welcomes the user to GFF. It has information about the site and the GFF project, and shows three recently-added recipes. The header has a navbar and search bar, and there is a footer with social media links.
 
@@ -150,6 +157,11 @@ The Favorites Finder feature, with the option to save the recipe to the user's F
 The Add Recipe form, where a user can add their own recipe:
 <div align="left">
   <img src="static/images/readme-images/wf-add-recipe.png" alt="Wireframe design of Add Recipe form" width="500">
+</div>
+
+A recipe detail:
+<div align="left">
+  <img src="static/images/readme-images/wf-recipe-detail.png" alt="Wireframe design of recipe detail" width="500">
 </div>
 
 ### Surface
@@ -450,8 +462,14 @@ Deployment bug
 
 Admin panel is not accessible from the deployed site
 - When I navigate to admin/ there is a Server Error (500)
-- I tried [this fix from Stack Overflow](https://stackoverflow.com/a/73189232), editing STATICFILES_STORAGE in settings.py
-<!-- Fix this bug!! -->
+- I tried [this fix from Stack Overflow](https://stackoverflow.com/a/73189232), changing <br> `STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorageSTATICFILES_STORAGE"` to <br> `STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"` in settings.py
+- This fixed the bug and made it possible to access the admin panel both localy and from the deployed site.
+
+Stylesheet for admin panel not loading
+<div align="center">
+  <img src="static/images/readme-images/stylesheet-bug.png" alt="" width="450">
+</div>
+<!-- fix this bug! -->
 
 ## Future Implementations
 There are many features that will improve the user's experience of the current web app. 
