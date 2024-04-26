@@ -450,6 +450,7 @@ Deployment bug
 
 Admin panel is not accessible from the deployed site
 - When I navigate to admin/ there is a Server Error (500)
+- I tried [this fix from Stack Overflow](https://stackoverflow.com/a/73189232), editing STATICFILES_STORAGE in settings.py
 <!-- Fix this bug!! -->
 
 ## Future Implementations
