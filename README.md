@@ -354,8 +354,8 @@ All user stories were tested with the website's functionality. These are the res
 | **Search by keyword**: As a Site User I can search by keyword so that I can find recipes with specific ingredients, methods, etc. | ✅ | The search bar in the header allows the user to search for recipes by keyword. |
 | **Open a recipe**: As a Site User I can click on a recipe so that I can read the full text. | ✅ | The recipe detail page shows each recipe's title, description, level, method, and up to 3 tags, as well as a photo and the ingredients and instructions. |
 | **View recipe list**: As a Site User I can view a list of recipes so that I can select one to read. | ✅ | The recipes page shows all recipes on the site. |
-| Find favorites: As a Site User I can use keywords to search for new favorites so that I can discover new recipes that suit me. | ✅ | The favorite finder page allows logged-in users to see a random recipe or a recipe based on keywords. |
-| Save favorites: As a Site User I can add and save favorites so that I can return to the site to see recipes that suit me. | ✅ | In the favorites finder, a user can save a recipe to their favorites and view them on the Favorites page. |
+| **Find favorites**: As a Site User I can use keywords to search for new favorites so that I can discover new recipes that suit me. | ✅ | The favorite finder page allows logged-in users to see a random recipe or a recipe based on keywords. |
+| **Save favorites**: As a Site User I can add and save favorites so that I can return to the site to see recipes that suit me. | ✅ | In the favorites finder, a user can save a recipe to their favorites and view them on the Favorites page. |
 
 ### Manual Testing
 This web app was tested in Chrome Developer Tools for troubleshooting functionality and style problems during development. Responsiveness was tested with CDT and [Responsive Design Checker](https://responsivedesignchecker.com/). Functionality was tested on iOS with Chrome and Safari. The UX design was tested by users.
