@@ -2,7 +2,7 @@
 Your baking buddy for alternative breads and more
 
 <div align="left">
-  <img src="static/images/readme-images/mockup.png" alt="Mockup on different devices, created with Techsini" width="">
+  <img src="static/images/readme-images/mockup.png" alt="Mockup on different devices, created with Techsini">
 </div>
 
 Grain Free Friend is a recipe sharing web app that invites home bakers to join a worldwide community for support and solutions. It was started in 2024 to share the secrets of baking without grain or sugar. GFF is a way to find the basic recipes that work every day, as well as fancy treats for special occasions.
@@ -320,12 +320,12 @@ The performance of this web app was tested with Lighthouse in Chrome Developer t
 
 Desktop results:
 <div align="left">
-  <img src="static/images/readme-images/lighthouse-desktop.png" alt="Lighthouse report for desktop" width="350">
+  <img src="static/images/readme-images/lighthouse-desktop.png" alt="Lighthouse report for desktop" width="400">
 </div>
 
 Mobile results:
 <div align="left">
-  <img src="static/images/readme-images/lighthouse-mobile.png" alt="Lighthouse report for mobile" width="350">
+  <img src="static/images/readme-images/lighthouse-mobile.png" alt="Lighthouse report for mobile" width="400">
 </div>
 
 ### Code Validation
@@ -393,6 +393,7 @@ The functionality of links and other user actions was tested manually, with the 
 <!-- Finish table -->
 
 ### Bugs
+#### Fixed bugs
 Missing imports
 - The installed libraries would not run. The error message was: <i>Import "django_resized" could not be resolved.</i> The solution really was [to turn it off and on](https://stackoverflow.com/questions/65933570/import-boto3-could-not-be-resolved-python-vs-code). I restarted VS Code, and this fixed the bug.
 - Add input field for levels <br>
@@ -435,27 +436,27 @@ Deployment bug
 - I set everything back to the way it was before. DEBUG = True in settings.py and DEBUG = FALSE in Heroku Config Vars.
 - I rewrote some settings in settings.py:
 <div align="center">
-  <img src="static/images/readme-images/deployment-bug1.png" alt="" width="450">
+  <img src="static/images/readme-images/deployment-bug1.png" alt="Deployment bug screenshot" width="450">
 </div>
 
 - and env.py:
 <div align="center">
-  <img src="static/images/readme-images/deployment-bug2.png" alt="" width="450">
+  <img src="static/images/readme-images/deployment-bug2.png" alt="Deployment bug screenshot" width="450">
 </div>
 
 - I then got this error message instead of the server error:
 <div align="center">
-  <img src="static/images/readme-images/deployment-bug3.png" alt="" width="450">
+  <img src="static/images/readme-images/deployment-bug3.png" alt="Deployment bug screenshot" width="450">
 </div>
 
 - Tutoring helped me find the error and fix it with an if statement, and the site loaded with no errors:
 <div align="center">
-  <img src="static/images/readme-images/deployment-bug4.png" alt="" width="450">
+  <img src="static/images/readme-images/deployment-bug4.png" alt="Deployment bug screenshot" width="450">
 </div>
 
 - In Heroku Config Vars I still had DEBUG = FALSE. Tutoring helped me create an error log file with this code in settings.py:
 <div align="center">
-  <img src="static/images/readme-images/error-logging.png" alt="" width="450">
+  <img src="static/images/readme-images/error-logging.png" alt="Deployment bug screenshot" width="450">
 </div>
 
 - There was a leading slash in the head of the base.html file. Removing the slash allowed the site to run without errors.
@@ -463,13 +464,18 @@ Deployment bug
 Admin panel is not accessible from the deployed site
 - When I navigate to admin/ there is a Server Error (500)
 - I tried [this fix from Stack Overflow](https://stackoverflow.com/a/73189232), changing <br> `STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorageSTATICFILES_STORAGE"` to <br> `STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"` in settings.py
-- This fixed the bug and made it possible to access the admin panel both localy and from the deployed site.
+- This fixed the bug and made it possible to access the admin panel both locally and from the deployed site.
 
+#### Unfixed bugs
 Stylesheet for admin panel not loading
 <div align="center">
-  <img src="static/images/readme-images/stylesheet-bug.png" alt="" width="450">
+  <img src="static/images/readme-images/stylesheet-bug.png" alt="Stylesheet errors" width="550">
 </div>
-<!-- fix this bug! -->
+
+- When loading the admin panel, these errors appeared in the console.
+- It seems to be an issue with code that comes from Django, and that I do not have access to.
+- When I double-checked with tutoring, and they suggested that I write it up as an unfixed bug.
+- This issue is only affecting the admin panel, and does not affect functionality.
 
 ## Future Implementations
 There are many features that will improve the user's experience of the current web app. 
@@ -477,12 +483,12 @@ There are many features that will improve the user's experience of the current w
 - User can add and delete favorites from the recipe detail page.
 - User can comment on recipes. The comments will have CRUD functionality.
 - User can filter a search by tag. This will also involve creating tags, instead of the placeholder fix in the current version.
-- Require admin approval for user-submitted recipes and comments. the user can submit a recipe, and when it is approved, it will be published.
+- Require admin approval for user-submitted recipes and comments. The user can submit a recipe, and when it is approved, it will be published.
 - Add contact form. As a placeholder, the Contact button on the About page currently links to Facebook's home page.
 - Make custom 403 page visible.
 - Custom feedback messages.
 - Update styling and visual appeal.
-- Content. My grain-free recipe development project is ongoing.
+- Content. The grain-free recipe development project is ongoing.
 
 ## Languages, Libraries, and Software
 ### Languages
