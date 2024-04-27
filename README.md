@@ -129,8 +129,6 @@ The footer contains social media links. Social media icons were created with [UX
 ### Design
 The Grain Free Friend mission is to make grain-free baking more accessible and customized for the needs of the community. The web app was designed to be simple and appealing for new and experienced home cooks. Navigation is simple and clear. The layout is uniform and intuitive across the site, keeping the user's focus on the content. User recipes include the ability to use markdown for clarity, and user-submitted recipe images are cropped to a square, to keep the visual layout consistent.
 
-<!-- Add database schema -->
-
 #### Wireframes
 A selection of wireframes showing the layout. <br>
 
@@ -294,27 +292,6 @@ Add recipe, mobile:
 </div>
 
 ## Testing
-<!-- Unfortunately technical testing is a future implementation. -->
-
-<!-- From the assessment:
-4.3	Document all implemented testing in the README. 
-No. 
-Testing write-ups are present and cover most automated and/or manual tests, but scope exists for more detail
-
-Consider adding seven main sections with screenshots to the testing: 
-* Manual testing of each section of the site (such as buttons, links etc) 
-* Testing site responsiveness using a site like https://responsivedesignchecker.com/ 
-* Code validation (CSS/HTML/JS using online tools like https://jigsaw.w3.org/css-validator/ and JSHint) * Testing of all user stories 
-* Automated testing details 
-* Documentation of any bugs encountered and their resolution steps 
-* Documentation of any open bugs 
-
-Ideally, manual test cases should focus on each individual section of every page on the website. Each test case should be specific, objective, step-wise replicable. Instead of adding a general overview saying that everything works fine, consider documenting tests on each element on the page (ie. buttons, input boxes, navigation links etc) by testing them in their happy flow and also the bad/exception flow, mentioning the expected and the observed results, and drawing a parallel between them. This can be documented in a tabular format. Consider using the following format for manual test cases: 
-* Expected - Feature is expected to do X when the user does Y 
-* Testing - Tested the feature by doing Y 
-* Result - The feature did not respond due to A,B,C or Result - The feature acted as normally and it did Y 
-* Fix - I did Z to the code because something was missing. -->
-
 ### Performance
 The performance of this web app was tested with Lighthouse in Chrome Developer tools, with the following results.
 
@@ -378,12 +355,9 @@ The functionality of links and other user actions was tested manually, with the 
 | Sign in page - Sign in button (incorrect) | Shows a message that the username and/or password is not correct |  | ✅ |
 | Sign in page - Sign in button | Direct to landing page | Show success message | ✅ |
 | Sign in page - Sign up link | Direct to Sign up page |  | ✅ |
+| Sign in page - Forgot password link | Direct to allauth default password reset page | In the future this will be a custom page | ✅ |
 | Navbar - Search input | User can enter text |  | ✅ |
 | Navbar - Search button | Direct to Recipes page and show all recipes that include entered content |  | ✅ |
-| Footer - Patreon social link | Direct to Patreon landing page in new window |  | ✅ |
-| Footer - Instagram social link | Direct to Instagram landing page in new window |  | ✅ |
-| Footer - Facebook social link | Direct to Facebook landing page in new window |  | ✅ |
-| Footer - Pinterest social link | Direct to Pinterest landing page in new window |  | ✅ |
 | Sign in - Sign in button | Sign in, redirect to home page | Show success message | ✅ |
 | About - Contact button | Direct to Facebook landing page in new window | In the future this will be a contact form | ✅ |
 | Add Recipe page - Create Recipe button | Save recipe, redirect to Recipes page | Show success message | ✅ |
@@ -398,8 +372,10 @@ The functionality of links and other user actions was tested manually, with the 
 | Favorite finder - All recipes button | Direct to Recipes page |  | ✅ |
 | Navbar - Logout link | Direct to logout confirmation page |  | ✅ |
 | Logout page - Sign out button | Sign out, redirect to landing page | Show success message | ✅ |
-
-<!-- Finish table -->
+| Footer - Patreon social link | Direct to Patreon landing page in new window |  | ✅ |
+| Footer - Instagram social link | Direct to Instagram landing page in new window |  | ✅ |
+| Footer - Facebook social link | Direct to Facebook landing page in new window |  | ✅ |
+| Footer - Pinterest social link | Direct to Pinterest landing page in new window |  | ✅ |
 
 ### Bugs
 #### Fixed bugs

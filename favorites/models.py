@@ -15,9 +15,5 @@ class Option(models.Model):
         Recipe, related_name="user_option", on_delete=models.CASCADE
     )
 
-    # options = models.ManyToManyField(
-    #     User, blank=True
-    # )
-
     def __str__(self):
         return f"{self.user.username}'s {self.recipe.title} recipe"
