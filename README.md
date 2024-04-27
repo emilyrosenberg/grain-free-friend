@@ -366,29 +366,38 @@ The functionality of links and other user actions was tested manually, with the 
 | :- | :- | :- | :-: |
 | Navbar - Logo link | Direct to home page |  | ✅ |
 | Navbar - Home link | Direct to home page |  | ✅ |
-| Navbar - Recipes link | Direct to recipes/ |  | ✅ |
-| Navbar - Add Recipe link (not logged in) | Redirect to accounts/login/ |  | ✅ |
-| Navbar - Add Recipe link (logged in) | Direct to recipes/add/ |  | ✅ |
-| Navbar - About link | Direct to about/ |  | ✅ |
-| Navbar - Register link | Direct to accounts/signup/ |  | ✅ |
-| Navbar - Login link | Direct to accounts/login/ |  | ✅ |
+| Navbar - Recipes link | Direct to Recipes page |  | ✅ |
+| Navbar - Add Recipe link (not logged in) | Redirect to Sign in page |  | ✅ |
+| Navbar - Add Recipe link (logged in) | Direct to Add Recipe form |  | ✅ |
+| Navbar - About link | Direct to About page |  | ✅ |
+| Navbar - Register link | Direct to Sign up page |  | ✅ |
+| Sign up page - Sign up button (incomplete) | Shows a message to complete the required field |  | ✅ |
+| Sign up page - Sign in link | Direct to Sign in page |  | ✅ |
+| Sign up page - Sign up button | Direct to landing page | Show success message | ✅ |
+| Navbar - Login link | Direct to Sign in page |  | ✅ |
+| Sign in page - Sign in button (incorrect) | Shows a message that the username and/or password is not correct |  | ✅ |
+| Sign in page - Sign in button | Direct to landing page | Show success message | ✅ |
+| Sign in page - Sign up link | Direct to Sign up page |  | ✅ |
 | Navbar - Search input | User can enter text |  | ✅ |
 | Navbar - Search button | Direct to Recipes page and show all recipes that include entered content |  | ✅ |
-| Footer - Social links | Direct to Patreon, Facebook, etc. |  | ✅ |
-| Sign in - Sign in button | Sign in, redirect to home page, show success message |  | ✅ |
-| About - Contact button | Direct to facebook.com | In the future this will be a contact form | ✅ |
-|  |  |  | ✅ |
-|  |  |  | ✅ |
-|  |  |  | ✅ |
-|  |  |  | ✅ |
-|  |  |  | ✅ |
-|  |  |  | ✅ |
-|  |  |  | ✅ |
-|  |  |  | ✅ |
-|  |  |  | ✅ |
-|  |  |  | ✅ |
-|  |  |  | ✅ |
-|  |  |  | ✅ |
+| Footer - Patreon social link | Direct to Patreon landing page in new window |  | ✅ |
+| Footer - Instagram social link | Direct to Instagram landing page in new window |  | ✅ |
+| Footer - Facebook social link | Direct to Facebook landing page in new window |  | ✅ |
+| Footer - Pinterest social link | Direct to Pinterest landing page in new window |  | ✅ |
+| Sign in - Sign in button | Sign in, redirect to home page | Show success message | ✅ |
+| About - Contact button | Direct to Facebook landing page in new window | In the future this will be a contact form | ✅ |
+| Add Recipe page - Create Recipe button | Save recipe, redirect to Recipes page | Show success message | ✅ |
+| Recipes page - Click on recipe | Direct to recipe page and show recipe details |  | ✅ |
+| Recipe detail - Edit button (owner) | Direct to the edit form for the recipe |  | ✅ |
+| Edit recipe page - Save changes button | Save changes, redirect to Recipes page | Show success message | ✅ |
+| Recipe detail - Delete button (owner) | Direct to delete confirmation page |  | ✅ |
+| Recipe delete page - Confirm button (owner) | Delete recipe, redirect to Recipes page | Show success message | ✅ |
+| Favorites page - Favorite Finder button | Direct to Favorite finder page, with a random recipe |  | ✅ |
+| Favorite Finder - Search bar and button | Show a recipe that contains the keyword |  | ✅ |
+| Favorite finder - Add recipe button | Add recipe to favorites, redirect to Favorites page | Show success message | ✅ |
+| Favorite finder - All recipes button | Direct to Recipes page |  | ✅ |
+| Navbar - Logout link | Direct to logout confirmation page |  | ✅ |
+| Logout page - Sign out button | Sign out, redirect to landing page | Show success message | ✅ |
 
 <!-- Finish table -->
 
