@@ -57,8 +57,8 @@ These stories guided the development of features. To implement Agile methodology
 
 #### Entity relationship diagram
 This web app has a User model which comes from Django, a Recipe model which shows all over the site in different configurations, and an Option model which handles Favorites.
-<div align="left">
-  <img src="static/images/readme-images/entity-relationship.png" alt="Entity relationship diagram" width="450">
+<div align="center">
+  <img src="static/images/readme-images/entity-relationship.png" alt="Entity relationship diagram" width="500">
 </div>
 
 #### Landing Page
@@ -133,39 +133,39 @@ The Grain Free Friend mission is to make grain-free baking more accessible and c
 A selection of wireframes showing the layout. <br>
 
 The landing page for an unregistered user:
-<div align="left">
-  <img src="static/images/readme-images/wf-landing-page.png" alt="Landing page" width="500">
+<div align="center">
+  <img src="static/images/readme-images/wf-landing-page.png" alt="Landing page" width="600">
 </div>
 
 The page showing all recipes:
-<div align="left">
-  <img src="static/images/readme-images/wf-recipes.png" alt="Wireframe design of all recipes" width="500">
+<div align="center">
+  <img src="static/images/readme-images/wf-recipes.png" alt="Wireframe design of all recipes" width="600">
 </div>
 
 A registered user's Favorites page:
-<div align="left">
-  <img src="static/images/readme-images/wf-favorites.png" alt="Wireframe design of favorites page" width="500">
+<div align="center">
+  <img src="static/images/readme-images/wf-favorites.png" alt="Wireframe design of favorites page" width="600">
 </div>
 
 The Favorites Finder feature, with the option to save the recipe to the user's Favorites:
-<div align="left">
-  <img src="static/images/readme-images/wf-favorite-finder.png" alt="Wireframe design of favorites finder" width="500">
+<div align="center">
+  <img src="static/images/readme-images/wf-favorite-finder.png" alt="Wireframe design of favorites finder" width="600">
 </div>
 
 The Add Recipe form, where a user can add their own recipe:
-<div align="left">
-  <img src="static/images/readme-images/wf-add-recipe.png" alt="Wireframe design of Add Recipe form" width="500">
+<div align="center">
+  <img src="static/images/readme-images/wf-add-recipe.png" alt="Wireframe design of Add Recipe form" width="600">
 </div>
 
 A recipe detail:
-<div align="left">
-  <img src="static/images/readme-images/wf-recipe-detail.png" alt="Wireframe design of recipe detail" width="500">
+<div align="center">
+  <img src="static/images/readme-images/wf-recipe-detail.png" alt="Wireframe design of recipe detail" width="600">
 </div>
 
 ### Surface
 #### Colors
 The color palette is from [Lilybug Design](https://www.lilybugdesign.co.nz/colour-wall). I saw one of these designs used in a [PP4 project by Roshna Vakkee](https://github.com/RoshnaVakkeel/Little_Learners_Lab_Logs?tab=readme-ov-file), and found a beautiful one for my project. This palette is fresh and lively, as well as warm. It supports the Grain Free Friend branding: accessible, fun, warm, supportive.
-<div align="left">
+<div align="center">
   <img src="static/images/readme-images/color-palette.png" alt="Color palette" width="450">
 </div>
 
@@ -218,76 +218,77 @@ The background is the lightest color in the palette, so that the content is clea
 A selection of screenshots on desktop and mobile. <br>
 
 When a user first visits Grain Free Friend, they see the landing page:
-<div align="left">
-  <img src="static/images/readme-images/landing-page2.png" alt="Landing page on desktop" width="500">
+<div align="center">
+  <img src="static/images/readme-images/landing-page2.png" alt="Landing page on desktop" width="600">
 </div>
 
 Registration:
-<div align="left">
-  <img src="static/images/readme-images/register.png" alt="Registration" width="350">
+<div align="center">
+  <img src="static/images/readme-images/register.png" alt="Registration" width="450">
 </div>
 
 Log in:
-<div align="left">
-  <img src="static/images/readme-images/login.png" alt="Log in" width="350">
+<div align="center">
+  <img src="static/images/readme-images/login.png" alt="Log in" width="450">
 </div>
 
 Landing page for a logged-in user:
-<div align="left">
-  <img src="static/images/readme-images/landing-page1.png" alt="Landing page for a logged-in user" width="500">
+<div align="center">
+  <img src="static/images/readme-images/landing-page1.png" alt="Landing page for a logged-in user" width="600">
 </div>
 
 About:
-<div align="left">
-  <img src="static/images/readme-images/about.png" alt="About" width="500">
+<div align="center">
+  <img src="static/images/readme-images/about.png" alt="About" width="600">
 </div>
 
 Favorites:
-<div align="left">
-  <img src="static/images/readme-images/favorites.png" alt="Favorites" width="500">
+<div align="center">
+  <img src="static/images/readme-images/favorites.png" alt="Favorites" width="600">
 </div>
 
 Favorite Finder:
-<div align="left">
-  <img src="static/images/readme-images/favorite-finder.png" alt="Favorite finder" width="350">
+<div align="center">
+  <img src="static/images/readme-images/favorite-finder.png" alt="Favorite finder" width="450">
 </div>
 
 Favorite Finder search:
-<div align="left">
-  <img src="static/images/readme-images/favorite-finder-search.png" alt="Favorite finder search" width="350">
+<div align="center">
+  <img src="static/images/readme-images/favorite-finder-search.png" alt="Favorite finder search" width="450">
 </div>
 
 All recipes:
-<div align="left">
-  <img src="static/images/readme-images/all-recipes.png" alt="All recipes" width="500">
+<div align="center">
+  <img src="static/images/readme-images/all-recipes.png" alt="All recipes" width="600">
+</div>
 
 Add recipe:
-<div align="left">
-  <img src="static/images/readme-images/add-recipe.png" alt="Add recipe" width="350">
+<div align="center">
+  <img src="static/images/readme-images/add-recipe.png" alt="Add recipe" width="450">
 </div>
 
 Edit recipe:
-<div align="left">
-  <img src="static/images/readme-images/edit-recipe.png" alt="Edit recipe" width="350">
+<div align="center">
+  <img src="static/images/readme-images/edit-recipe.png" alt="Edit recipe" width="450">
 </div>
 
 Log out:
-<div align="left">
-  <img src="static/images/readme-images/log-out.png" alt="Log out" width="500">
+<div align="center">
+  <img src="static/images/readme-images/log-out.png" alt="Log out" width="600">
 </div>
 
 404 - Not Found:
-<div align="left">
+<div align="center">
   <img src="static/images/readme-images/404-page.png" alt="404 not found" width="200">
 </div>
 
 Landing page, mobile:
-<div align="left">
+<div align="center">
   <img src="static/images/readme-images/landing-page-mobile.png" alt="Landing page on mobile" width="250">
 </div>
 
 Add recipe, mobile:
-<div align="left">
+<div align="center">
   <img src="static/images/readme-images/add-recipe-mobile.png" alt="Add recipe on mobile" width="250">
 </div>
 
@@ -339,43 +340,43 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 
 The functionality of links and other user actions was tested manually, with the following results:
 
-| Action | Expectation | Details | Pass |
-| :- | :- | :- | :-: |
-| Navbar - Logo link | Direct to home page |  | ✅ |
-| Navbar - Home link | Direct to home page |  | ✅ |
-| Navbar - Recipes link | Direct to Recipes page |  | ✅ |
-| Navbar - Add Recipe link (not logged in) | Redirect to Sign in page |  | ✅ |
-| Navbar - Add Recipe link (logged in) | Direct to Add Recipe form |  | ✅ |
-| Navbar - About link | Direct to About page |  | ✅ |
-| Navbar - Register link | Direct to Sign up page |  | ✅ |
-| Sign up page - Sign up button (incomplete) | Shows a message to complete the required field |  | ✅ |
-| Sign up page - Sign in link | Direct to Sign in page |  | ✅ |
-| Sign up page - Sign up button | Direct to landing page | Show success message | ✅ |
-| Navbar - Login link | Direct to Sign in page |  | ✅ |
-| Sign in page - Sign in button (incorrect) | Shows a message that the username and/or password is not correct |  | ✅ |
-| Sign in page - Sign in button | Direct to landing page | Show success message | ✅ |
-| Sign in page - Sign up link | Direct to Sign up page |  | ✅ |
-| Sign in page - Forgot password link | Direct to allauth default password reset page | In the future this will be a custom page | ✅ |
-| Navbar - Search input | User can enter text |  | ✅ |
-| Navbar - Search button | Direct to Recipes page and show all recipes that include entered content |  | ✅ |
-| Sign in - Sign in button | Sign in, redirect to home page | Show success message | ✅ |
-| About - Contact button | Direct to Facebook landing page in new window | In the future this will be a contact form | ✅ |
-| Add Recipe page - Create Recipe button | Save recipe, redirect to Recipes page | Show success message | ✅ |
-| Recipes page - Click on recipe | Direct to recipe page and show recipe details |  | ✅ |
-| Recipe detail - Edit button (owner) | Direct to the edit form for the recipe |  | ✅ |
-| Edit recipe page - Save changes button | Save changes, redirect to Recipes page | Show success message | ✅ |
-| Recipe detail - Delete button (owner) | Direct to delete confirmation page |  | ✅ |
-| Recipe delete page - Confirm button (owner) | Delete recipe, redirect to Recipes page | Show success message | ✅ |
-| Favorites page - Favorite Finder button | Direct to Favorite finder page, with a random recipe |  | ✅ |
-| Favorite Finder - Search bar and button | Show a recipe that contains the keyword |  | ✅ |
-| Favorite finder - Add recipe button | Add recipe to favorites, redirect to Favorites page | Show success message | ✅ |
-| Favorite finder - All recipes button | Direct to Recipes page |  | ✅ |
-| Navbar - Logout link | Direct to logout confirmation page |  | ✅ |
-| Logout page - Sign out button | Sign out, redirect to landing page | Show success message | ✅ |
-| Footer - Patreon social link | Direct to Patreon landing page in new window |  | ✅ |
-| Footer - Instagram social link | Direct to Instagram landing page in new window |  | ✅ |
-| Footer - Facebook social link | Direct to Facebook landing page in new window |  | ✅ |
-| Footer - Pinterest social link | Direct to Pinterest landing page in new window |  | ✅ |
+| Action | Expectation | Pass | Details |
+| :- | :- | :-: | :- |
+| Navbar - Logo link | Direct to home page | ✅ |  |
+| Navbar - Home link | Direct to home page | ✅ |  |
+| Navbar - Recipes link | Direct to Recipes page | ✅ |  |
+| Navbar - Add Recipe link (not logged in) | Redirect to Sign in page | ✅ |  |
+| Navbar - Add Recipe link (logged in) | Direct to Add Recipe form | ✅ |  |
+| Navbar - About link | Direct to About page | ✅ |  |
+| Navbar - Register link | Direct to Sign up page | ✅ |  |
+| Sign up page - Sign up button (incomplete) | Shows a message to complete the required field | ✅ |  |
+| Sign up page - Sign in link | Direct to Sign in page | ✅ |  |
+| Sign up page - Sign up button | Direct to landing page | ✅ | Show success message |
+| Navbar - Login link | Direct to Sign in page | ✅ |  |
+| Sign in page - Sign in button (incorrect) | Shows a message that the username and/or password is not correct | ✅ |  |
+| Sign in page - Sign in button | Direct to landing page | ✅ | Show success message |
+| Sign in page - Sign up link | Direct to Sign up page | ✅ |  |
+| Sign in page - Forgot password link | Direct to allauth default password reset page | ✅ | In the future this will be a custom page |
+| Navbar - Search input | User can enter text | ✅ |  |
+| Navbar - Search button | Direct to Recipes page and show all recipes that include entered content | ✅ |  |
+| Sign in - Sign in button | Sign in, redirect to home page | ✅ | Show success message |
+| About - Contact button | Direct to Facebook landing page in new window | ✅ | In the future this will be a contact form |
+| Add Recipe page - Create Recipe button | Save recipe, redirect to Recipes page | ✅ | Show success message |
+| Recipes page - Click on recipe | Direct to recipe page and show recipe details | ✅ |  |
+| Recipe detail - Edit button (owner) | Direct to the edit form for the recipe | ✅ |  |
+| Edit recipe page - Save changes button | Save changes, redirect to Recipes page | ✅ | Show success message |
+| Recipe detail - Delete button (owner) | Direct to delete confirmation page | ✅ |  |
+| Recipe delete page - Confirm button (owner) | Delete recipe, redirect to Recipes page | ✅ | Show success message |
+| Favorites page - Favorite Finder button | Direct to Favorite finder page, with a random recipe | ✅ |  |
+| Favorite Finder - Search bar and button | Show a recipe that contains the keyword | ✅ |  |
+| Favorite finder - Add recipe button | Add recipe to favorites, redirect to Favorites page | ✅ | Show success message |
+| Favorite finder - All recipes button | Direct to Recipes page | ✅ |  |
+| Navbar - Logout link | Direct to logout confirmation page | ✅ |  |
+| Logout page - Sign out button | Sign out, redirect to landing page | ✅ | Show success message |
+| Footer - Patreon social link | Direct to Patreon landing page in new window | ✅ |  |
+| Footer - Instagram social link | Direct to Instagram landing page in new window | ✅ |  |
+| Footer - Facebook social link | Direct to Facebook landing page in new window | ✅ |  |
+| Footer - Pinterest social link | Direct to Pinterest landing page in new window | ✅ |  |
 
 ### Bugs
 #### Fixed bugs
