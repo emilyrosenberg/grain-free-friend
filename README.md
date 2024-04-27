@@ -408,7 +408,7 @@ User registration error
 - I checked that everything looked ok on Heroku
 - I searched the PP4 Slack channel and found [this advice](https://code-institute-room.slack.com/archives/C7EJUQT2N/p1649343681449299?thread_ts=1649342508.908129&cid=C7EJUQT2N) to use this line of code in settings.py
 <div align="center">
-  <img src="staticfiles/images/readme-images/bug-fix.png" alt="Email authentification setting" width="450">
+  <img src="static/images/readme-images/bug-fix.png" alt="Email authentification setting" width="450">
 </div>
 
 - I had `ACCOUNT_EMAIL_VERIFICATION = none` in my code already but there was a typo.
@@ -577,7 +577,7 @@ _Thanks to [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blo
 ### Thank you
 - This project was developed using the [Django Recipe Sharing tutorial by Dee Mc](https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=1). I am indebted to her for inspiration on the entire project, including the Django logic, the basic styling of the header, footer, and forms, the CRUD functionality of the recipes and favorites, class-based views, and querying.
 - The project was also inspired by Code Institute's Django Blog Walkthrough. I used this to help create the success alerts.
-- Inspiration for this readme came from [gStarhigh](https://github.com/gStarhigh/pro4). When I finish it I hope I can come anywhere close to this standard.
+- Inspiration for this readme came from [gStarhigh](https://github.com/gStarhigh/pro4).
 - An outline of the deployment instructions came from [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blob/main/README.md#frameworks---libraries---programs-used).
 - Thank you to the Code Institute tutors for their enthusiastic support with problem solving and squashing bugs.
 - Thank you to my Code Institute mentor Adegbenga Adeye for helping with the planning for this project.
