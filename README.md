@@ -1,5 +1,5 @@
 # Grain Free Friend
-Your baking buddy for alternative breads and more
+Your baking buddy for alternative breads and more.
 
 <div align="left">
   <img src="static/images/readme-images/mockup.png" alt="Mockup on different devices, created with Techsini">
@@ -60,6 +60,8 @@ This web app has a User model which comes from Django, a Recipe model which show
 <div align="center">
   <img src="static/images/readme-images/entity-relationship.png" alt="Entity relationship diagram" width="500">
 </div>
+
+Diagram created with [Lucid Chart](https://www.lucidchart.com/pages/).
 
 #### Landing Page
 The landing page welcomes the user to GFF. It has information about the site and the GFF project, and shows three recently-added recipes. The header has a navbar and search bar, and there is a footer with social media links.
@@ -123,6 +125,7 @@ The header includes the GFF logo, navigation items, and a search bar.
 - The logo is described [below](#logo).
 - The navbar always contains Home, Recipes, and About. If the user is logged out or has no account, they can see options to Register and Login. If the user is logged in, they can see their Favorites, Add Recipe, and an option to Logout.
 - The search bar has an input field and a button. User can search by keyword and results will be returned if the keyword is in any recipe's title, description, tags, ingredients, and instructions.
+
 #### Footer
 The footer contains social media links. Social media icons were created with [UXWing](https://uxwing.com/).
 
@@ -161,6 +164,8 @@ A recipe detail:
 <div align="center">
   <img src="static/images/readme-images/wf-recipe-detail.png" alt="Wireframe design of recipe detail" width="600">
 </div>
+
+Wireframes created with [Balsamiq](https://balsamiq.com/).
 
 ### Surface
 #### Colors
@@ -201,7 +206,6 @@ The logo image was created using the [wix.com logo maker](https://www.wix.com/lo
 
 #### Favicon
 The favicon was created from the logo image using the [favico.io favicon converter](https://favicon.io/favicon-converter/).
-
 <div align="left">
   <img src="static/images/readme-images/favicon-image.png" alt="Favicon" width="75">
 </div>
@@ -222,52 +226,52 @@ When a user first visits Grain Free Friend, they see the landing page:
   <img src="static/images/readme-images/landing-page2.png" alt="Landing page on desktop" width="600">
 </div>
 
-Registration:
+This is the registration form for a new user:
 <div align="center">
   <img src="static/images/readme-images/register.png" alt="Registration" width="450">
 </div>
 
-Log in:
+Thsi is the log in form for a returning user:
 <div align="center">
   <img src="static/images/readme-images/login.png" alt="Log in" width="450">
 </div>
 
-Landing page for a logged-in user:
+This is the landing page for a logged-in user:
 <div align="center">
   <img src="static/images/readme-images/landing-page1.png" alt="Landing page for a logged-in user" width="600">
 </div>
 
-About:
+The About page:
 <div align="center">
   <img src="static/images/readme-images/about.png" alt="About" width="600">
 </div>
 
-Favorites:
+A logged-in user can see their Favorites:
 <div align="center">
   <img src="static/images/readme-images/favorites.png" alt="Favorites" width="600">
 </div>
 
-Favorite Finder:
+They can use the Favorite Finder to view a random recipe:
 <div align="center">
   <img src="static/images/readme-images/favorite-finder.png" alt="Favorite finder" width="450">
 </div>
 
-Favorite Finder search:
+Or search to view a random recipe that includes keywords:
 <div align="center">
   <img src="static/images/readme-images/favorite-finder-search.png" alt="Favorite finder search" width="450">
 </div>
 
-All recipes:
+Users can see all recipes here:
 <div align="center">
   <img src="static/images/readme-images/all-recipes.png" alt="All recipes" width="600">
 </div>
 
-Add recipe:
+The Add Recipe form:
 <div align="center">
   <img src="static/images/readme-images/add-recipe.png" alt="Add recipe" width="450">
 </div>
 
-Edit recipe:
+A user can edit their own recipe with the Edit Recipe form:
 <div align="center">
   <img src="static/images/readme-images/edit-recipe.png" alt="Edit recipe" width="450">
 </div>
@@ -277,17 +281,17 @@ Log out:
   <img src="static/images/readme-images/log-out.png" alt="Log out" width="600">
 </div>
 
-404 - Not Found:
+Custom page for 404 - Not Found:
 <div align="center">
   <img src="static/images/readme-images/404-page.png" alt="404 not found" width="200">
 </div>
 
-Landing page, mobile:
+This is an example of the landing page on mobile:
 <div align="center">
   <img src="static/images/readme-images/landing-page-mobile.png" alt="Landing page on mobile" width="250">
 </div>
 
-Add recipe, mobile:
+And the Add Recipe form on mobile:
 <div align="center">
   <img src="static/images/readme-images/add-recipe-mobile.png" alt="Add recipe on mobile" width="250">
 </div>
@@ -308,18 +312,19 @@ Mobile results:
 
 ### Code Validation
 #### HTML
-I ran the website address through the [W3C Markup Validator](https://validator.w3.org/). There was a recommendation, which I corrected. There are no errors.
+The HTML code was validated with the [W3C Markup Validator](https://validator.w3.org/). There was a recommendation, which I corrected. There are no errors.
 <div align="left">
   <img src="static/images/readme-images/html-error.png" alt="Html error" width="500">
 </div>
 
 #### CSS
-I ran the website address through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). There are no errors.
-
-<!-- #### JavaScript -->
+The CSS code was validated with the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). There are no errors.
 
 #### Python
-Code was formatted with the [black](https://pypi.org/project/black/) linter.
+Python code was formatted during development in VS Code with the [black](https://pypi.org/project/black/) linter.
+
+#### JavaScript
+This project does not include custom JavaScript. All functions are performing as expected.
 
 ### User Stories Testing
 All user stories were tested with the website's functionality. These are the results:
@@ -334,6 +339,8 @@ All user stories were tested with the website's functionality. These are the res
 | **View recipe list**: As a Site User I can view a list of recipes so that I can select one to read. | ✅ | The recipes page shows all recipes on the site. |
 | **Find favorites**: As a Site User I can use keywords to search for new favorites so that I can discover new recipes that suit me. | ✅ | The favorite finder page allows logged-in users to see a random recipe or a recipe based on keywords. |
 | **Save favorites**: As a Site User I can add and save favorites so that I can return to the site to see recipes that suit me. | ✅ | In the favorites finder, a user can save a recipe to their favorites and view them on the Favorites page. |
+
+User stories were tracked using [Github Projects](https://github.com/users/emilyrosenberg/projects/4/views/1). User personas and user stories are also described [above](#user-personas).
 
 ### Manual Testing
 This web app was tested in Chrome Developer Tools for troubleshooting functionality and style problems during development. Responsiveness was tested with CDT and [Responsive Design Checker](https://responsivedesignchecker.com/). Functionality was tested on iOS with Chrome and Safari. The UX design was tested by users.
@@ -379,7 +386,7 @@ The functionality of links and other user actions was tested manually, with the 
 | Footer - Pinterest social link | Direct to Pinterest landing page in new window | ✅ |  |
 
 ### Bugs
-#### Fixed bugs
+#### Resolved bugs
 Missing imports
 - The installed libraries would not run. The error message was: <i>Import "django_resized" could not be resolved.</i> The solution really was [to turn it off and on](https://stackoverflow.com/questions/65933570/import-boto3-could-not-be-resolved-python-vs-code). I restarted VS Code, and this fixed the bug.
 - Add input field for levels <br>
@@ -452,7 +459,7 @@ Admin panel is not accessible from the deployed site
 - I tried [this fix from Stack Overflow](https://stackoverflow.com/a/73189232), changing <br> `STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorageSTATICFILES_STORAGE"` to <br> `STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"` in settings.py
 - This fixed the bug and made it possible to access the admin panel both locally and from the deployed site.
 
-#### Unfixed bugs
+#### Unresolved bugs
 Stylesheet for admin panel not loading
 <div align="center">
   <img src="static/images/readme-images/stylesheet-bug.png" alt="Stylesheet errors" width="550">
@@ -480,10 +487,11 @@ There are many features that will improve the user's experience of the current w
 ### Languages
 - HTML
 - CSS
-- Javascript
+- JavaScript
 - Python
+
 ### Modules and Packages
-- black (python formatter)
+- black (Python formatter)
 - cloudinary (image hosting)
 - crispy-bootstrap5
 - dj-database-url
@@ -495,6 +503,7 @@ There are many features that will improve the user's experience of the current w
 - gunicorn (server for WSGI applications)
 - psycopg2
 - whitenoise (allows static files to load in deployed app)
+
 ### Frameworks and Websites
 - Bootstrap5
 - Django
@@ -507,6 +516,8 @@ There are many features that will improve the user's experience of the current w
 - Google Chrome Dev Tools
 - Google Fonts
 - Colorpicker
+- Lucid Chart
+- Balsamiq
 - UXWing
 - Unsplash
 - PEP8
@@ -580,7 +591,8 @@ _Thanks to [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blo
 - Inspiration for this readme came from [gStarhigh](https://github.com/gStarhigh/pro4).
 - An outline of the deployment instructions came from [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blob/main/README.md#frameworks---libraries---programs-used).
 - Thank you to the Code Institute tutors for their enthusiastic support with problem solving and squashing bugs.
-- Thank you to my Code Institute mentor Adegbenga Adeye for helping with the planning for this project.
-- Thank you to my CI mentor Martina Terlevic for inspiring and supporting me through the project improvements and lots of learning!
+- Thanks to the CI assessment team for feedback and improvement ideas.
+- Thanks to my Code Institute mentor Adegbenga Adeye.
+- Thank you to my Code Institute mentor Martina Terlevic for inspiring and supporting me through the project improvements and lots of learning!
 - Thanks to my Code Institute cohort facilitator Kristyna, who is the best at pep talks. Also thanks for suggesting the recipe sharing tutorial by Dee Mc!
-- And last but not least, thank you to my amazing student pals who have banded together to provide positivity and solutions in the tough times, and celebrations in the good ones.
+- And last but not least, thank you to my amazing student pals who have banded together to provide positivity and solutions in the tough times, and celebrations in the good ones. Wishing you all tons of success!
