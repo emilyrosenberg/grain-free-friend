@@ -153,9 +153,9 @@ A registered user's Favorites page:
   <img src="static/images/readme-images/wf-favorites.png" alt="Wireframe design of favorites page" width="600">
 </div>
 
-The Favorites Finder feature, with the option to save the recipe to the user's Favorites:
+The Favorite Finder feature, with the option to save the recipe to the user's Favorites:
 <div align="center">
-  <img src="static/images/readme-images/wf-favorite-finder.png" alt="Wireframe design of favorites finder" width="600">
+  <img src="static/images/readme-images/wf-favorite-finder.png" alt="Wireframe design of favorite finder" width="600">
 </div>
 
 The Add Recipe form, where a user can add their own recipe:
