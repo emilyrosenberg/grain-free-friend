@@ -36,6 +36,8 @@ This website is responsive on all devices, and designed to be appealing and intu
 
 ## UX
 ### User Personas
+Grain Free Friend was designed to be accessible to anyone who is interested in cooking without grains. More specifically, project development was guided by the needs of these user personas:
+
 - A home cook who enjoys experimenting and wants to learn more about grain-free baking.
 - A person with overlapping dietary restrictions (low-carb + kosher, vegan + celiac, etc).
 - A person with new grain-free dietary restrictions who wants to find tasty substitute recipes efficiently.
@@ -61,7 +63,7 @@ This web app has a User model which comes from Django, a Recipe model which show
   <img src="static/images/readme-images/entity-relationship.png" alt="Entity relationship diagram" width="500">
 </div>
 
-Diagram created with [Lucid Chart](https://www.lucidchart.com/pages/).
+Diagram was created with [Lucid Chart](https://www.lucidchart.com/pages/).
 
 #### Landing Page
 The landing page welcomes the user to GFF. It has information about the site and the GFF project, and shows three recently-added recipes. The header has a navbar and search bar, and there is a footer with social media links.
@@ -112,19 +114,20 @@ A random recipe is pulled from all recipes. When the user searches by keyword, a
 **Other Pages:** <br>
 #### About
 The About page is all about Grain Free Friend's community and mission.
-#### Contact
-This is a future implementation. It will include a contact form.
-#### 403 & 404
-The user lands on the 404 (not found) page when they try to access a page that doesn't exist. <br>
 
-The 403 (unauthorized access) page exists and will become visible in a future implementation.
+#### Contact
+This is a future implementation. A user will be able to submit a contact form.
+
+#### 403 & 404
+The user lands on the 404 - Not Found page when they try to access a page that doesn't exist. <br>
+The 403 - Unauthorized Access page has been created and will become visible in a future implementation.
 
 ### Features
 #### Header and Navigation
 The header includes the GFF logo, navigation items, and a search bar.
 - The logo is described [below](#logo).
 - The navbar always contains Home, Recipes, and About. If the user is logged out or has no account, they can see options to Register and Login. If the user is logged in, they can see their Favorites, Add Recipe, and an option to Logout.
-- The search bar has an input field and a button. User can search by keyword and results will be returned if the keyword is in any recipe's title, description, tags, ingredients, and instructions.
+- The search bar has an input field and a button. The user can search by keyword and results will be returned if the keyword is in any recipe's title, description, tags, ingredients, and instructions.
 
 #### Footer
 The footer contains social media links. Social media icons were created with [UXWing](https://uxwing.com/).
@@ -133,7 +136,7 @@ The footer contains social media links. Social media icons were created with [UX
 The Grain Free Friend mission is to make grain-free baking more accessible and customized for the needs of the community. The web app was designed to be simple and appealing for new and experienced home cooks. Navigation is simple and clear. The layout is uniform and intuitive across the site, keeping the user's focus on the content. User recipes include the ability to use markdown for clarity, and user-submitted recipe images are cropped to a square, to keep the visual layout consistent.
 
 #### Wireframes
-A selection of wireframes showing the layout. <br>
+The layout is shown in the following wireframes. <br>
 
 The landing page for an unregistered user:
 <div align="center">
@@ -165,7 +168,7 @@ A recipe detail:
   <img src="static/images/readme-images/wf-recipe-detail.png" alt="Wireframe design of recipe detail" width="600">
 </div>
 
-Wireframes created with [Balsamiq](https://balsamiq.com/).
+Wireframes were created with [Balsamiq](https://balsamiq.com/).
 
 ### Surface
 #### Colors
@@ -198,7 +201,7 @@ The main font is [Raleway](https://fonts.google.com/specimen/Raleway). This is a
 </div>
 
 #### Logo
-The logo represents the joy of heartfelt baking for oneself or others. Trying unconventional baking methods can be intimidating, and I wanted to show that it can also be simple, an act of kindness and community. It's an open source icon with the initials of Grain Free Friend in Montserrat font.<br>
+The logo represents the joy of heartfelt baking for oneself or others. Trying unconventional baking methods can be intimidating, and I wanted to show that it can also be simple, an act of kindness and community. The logo includes an open source icon with the acronym for Grain Free Friend in Montserrat font.<br>
 The logo image was created using the [wix.com logo maker](https://www.wix.com/logo/maker).
 <div align="left">
   <img src="static/images/logo.png" alt="Logo" width="200">
@@ -219,7 +222,7 @@ They are stored in and accessed through [Cloudinary](https://cloudinary.com).
 The background is the lightest color in the palette, so that the content is clearly visible.
 
 #### Screenshots
-A selection of screenshots on desktop and mobile. <br>
+The finished design is shown in the following screenshots. <br>
 
 When a user first visits Grain Free Friend, they see the landing page:
 <div align="center">
@@ -231,12 +234,12 @@ This is the registration form for a new user:
   <img src="static/images/readme-images/register.png" alt="Registration" width="450">
 </div>
 
-Thsi is the log in form for a returning user:
+This is the log in form for a returning user:
 <div align="center">
   <img src="static/images/readme-images/login.png" alt="Log in" width="450">
 </div>
 
-This is the landing page for a logged-in user:
+And the landing page for a logged-in user:
 <div align="center">
   <img src="static/images/readme-images/landing-page1.png" alt="Landing page for a logged-in user" width="600">
 </div>
@@ -244,6 +247,11 @@ This is the landing page for a logged-in user:
 The About page:
 <div align="center">
   <img src="static/images/readme-images/about.png" alt="About" width="600">
+</div>
+
+Users can see all recipes here:
+<div align="center">
+  <img src="static/images/readme-images/all-recipes.png" alt="All recipes" width="600">
 </div>
 
 A logged-in user can see their Favorites:
@@ -261,11 +269,6 @@ Or search to view a random recipe that includes keywords:
   <img src="static/images/readme-images/favorite-finder-search.png" alt="Favorite finder search" width="450">
 </div>
 
-Users can see all recipes here:
-<div align="center">
-  <img src="static/images/readme-images/all-recipes.png" alt="All recipes" width="600">
-</div>
-
 The Add Recipe form:
 <div align="center">
   <img src="static/images/readme-images/add-recipe.png" alt="Add recipe" width="450">
@@ -276,7 +279,7 @@ A user can edit their own recipe with the Edit Recipe form:
   <img src="static/images/readme-images/edit-recipe.png" alt="Edit recipe" width="450">
 </div>
 
-Log out:
+On clicking Logout in the navigation bar, the user sees this log out confirmation page:
 <div align="center">
   <img src="static/images/readme-images/log-out.png" alt="Log out" width="600">
 </div>
@@ -320,14 +323,14 @@ The HTML code was validated with the [W3C Markup Validator](https://validator.w3
 #### CSS
 The CSS code was validated with the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). There are no errors.
 
+#### JavaScript
+This project does not include custom JavaScript.
+
 #### Python
 Python code was formatted during development in VS Code with the [black](https://pypi.org/project/black/) linter.
 
-#### JavaScript
-This project does not include custom JavaScript. All functions are performing as expected.
-
 ### User Stories Testing
-All user stories were tested with the website's functionality. These are the results:
+All user stories were tested with the deployed website's functionality. These are the results:
 
 | User Story | Pass | Details |
 | :- | :-: | :-|
@@ -380,10 +383,10 @@ The functionality of links and other user actions was tested manually, with the 
 | Favorite finder - All recipes button | Direct to Recipes page | ✅ |  |
 | Navbar - Logout link | Direct to logout confirmation page | ✅ |  |
 | Logout page - Sign out button | Sign out, redirect to landing page | ✅ | Show success message |
-| Footer - Patreon social link | Direct to Patreon landing page in new window | ✅ |  |
-| Footer - Instagram social link | Direct to Instagram landing page in new window | ✅ |  |
-| Footer - Facebook social link | Direct to Facebook landing page in new window | ✅ |  |
-| Footer - Pinterest social link | Direct to Pinterest landing page in new window | ✅ |  |
+| Footer - Patreon social link | Direct to Patreon landing page | ✅ | Open in new window |
+| Footer - Instagram social link | Direct to Instagram landing page | ✅ | Open in new window |
+| Footer - Facebook social link | Direct to Facebook landing page | ✅ | Open in new window |
+| Footer - Pinterest social link | Direct to Pinterest landing page | ✅ | Open in new window |
 
 ### Bugs
 #### Resolved bugs
@@ -449,7 +452,7 @@ Deployment bug
 
 - In Heroku Config Vars I still had DEBUG = FALSE. Tutoring helped me create an error log file with this code in settings.py:
 <div align="center">
-  <img src="static/images/readme-images/error-logging.png" alt="Deployment bug screenshot" width="450">
+  <img src="static/images/readme-images/error-logging.png" alt="Deployment bug screenshot" width="350">
 </div>
 
 - There was a leading slash in the head of the base.html file. Removing the slash allowed the site to run without errors.
@@ -460,28 +463,28 @@ Admin panel is not accessible from the deployed site
 - This fixed the bug and made it possible to access the admin panel both locally and from the deployed site.
 
 #### Unresolved bugs
-Stylesheet for admin panel not loading
+Styles for admin panel not loading
 <div align="center">
   <img src="static/images/readme-images/stylesheet-bug.png" alt="Stylesheet errors" width="550">
 </div>
 
 - When loading the admin panel, these errors appeared in the console.
 - It seems to be an issue with code that comes from Django, and that I do not have access to.
-- When I double-checked with tutoring, and they suggested that I write it up as an unfixed bug.
-- This issue is only affecting the admin panel, and does not affect functionality.
+- When I double-checked with tutoring, and they suggested that I write it up as an unresolved bug.
+- This issue is only affecting the appearance of the admin panel, and does not disrupt functionality.
 
 ## Future Implementations
-There are many features that will improve the user's experience of the current web app. 
+In the future, Grain Free Friend will be even better! These are some of the features that will improve the user's experience: 
 - User can delete favorites. The CRUD functionality of the favorites app will be updated to include deleting favorites as well as adding them.
 - User can add and delete favorites from the recipe detail page.
 - User can comment on recipes. The comments will have CRUD functionality.
 - User can filter a search by tag. This will also involve creating tags, instead of the placeholder fix in the current version.
 - Require admin approval for user-submitted recipes and comments. The user can submit a recipe, and when it is approved, it will be published.
 - Add contact form. As a placeholder, the Contact button on the About page currently links to Facebook's home page.
-- Make custom 403 page visible.
-- Custom feedback messages.
+- Show custom 403 - Unauthorized Access page.
+- Customize feedback messages.
 - Update styling and visual appeal.
-- Content. The grain-free recipe development project is ongoing.
+- Add content. The grain-free recipe development project is ongoing.
 
 ## Languages, Libraries, and Software
 ### Languages
@@ -516,6 +519,8 @@ There are many features that will improve the user's experience of the current w
 - Google Chrome Dev Tools
 - Google Fonts
 - Colorpicker
+- Color Meanings
+- Techsini
 - Lucid Chart
 - Balsamiq
 - UXWing
@@ -595,4 +600,4 @@ _Thanks to [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blo
 - Thanks to my Code Institute mentor Adegbenga Adeye.
 - Thank you to my Code Institute mentor Martina Terlevic for inspiring and supporting me through the project improvements and lots of learning!
 - Thanks to my Code Institute cohort facilitator Kristyna, who is the best at pep talks. Also thanks for suggesting the recipe sharing tutorial by Dee Mc!
-- And last but not least, thank you to my amazing student pals who have banded together to provide positivity and solutions in the tough times, and celebrations in the good ones. Wishing you all tons of success!
+- And last but not least, thank you to my amazing student pals who have banded together to provide positivity and solutions in the tough times, and celebrations in the good ones. Wishing you all tons of success! 🎉
